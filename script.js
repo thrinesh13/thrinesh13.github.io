@@ -1,3 +1,8 @@
+const projectVisualStyles = document.createElement('link');
+projectVisualStyles.rel = 'stylesheet';
+projectVisualStyles.href = 'project-visual.css';
+document.head.appendChild(projectVisualStyles);
+
 const header = document.querySelector('[data-header]');
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('#nav-links');
