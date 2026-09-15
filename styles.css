@@ -165,7 +165,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .button-ghost { border: 1px solid rgba(255,255,255,.25); color: var(--white); }
 .footer { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 34px; color: #7a8797; font-size: 12px; }
 
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.reveal { opacity: 1; transform: none; }
 .reveal.visible { opacity: 1; transform: none; }
 
 @media (max-width: 900px) {
@@ -213,4 +213,57 @@ button, a { -webkit-tap-highlight-color: transparent; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* Recruiter-focused refinements */
+.hero h1 { font-size: clamp(50px, 5.3vw, 76px); line-height: 1.06; letter-spacing: -.055em; }
+.hero .eyebrow { line-height: 1.9; max-width: 480px; }
+.hero-intro { font-size: 18px; }
+.hero-social { display: flex; gap: 24px; margin-top: 18px; font-size: 14px; color: #b8c9db; }
+.hero-social a { text-decoration: none; border-bottom: 1px solid #566b7f; }
+.hero-social a:hover { color: var(--cyan); }
+.availability { color: #a4b3c4; }
+.hero-panel { border-radius: 16px; }
+.workflow-step strong { font-size: 28px; letter-spacing: -.04em; }
+.workflow-step small, .panel-topline, .quality-line p { color: #a7b6c8; }
+.proof-grid strong { font-size: 19px; letter-spacing: -.025em; }
+.proof-grid div { padding-block: 30px; }
+.feature-project { border-radius: 16px; overflow: hidden; }
+.project-card, .capability { border-radius: 12px; }
+.project-card { display: flex; flex-direction: column; }
+.project-card .text-link { align-self: flex-start; margin-top: auto; }
+.project-context { font-size: 13px; line-height: 1.65; padding-top: 16px; border-top: 1px solid var(--line); }
+.reliability-chart { padding: 18px 0; }
+.chart-caption { font-size: 10px; letter-spacing: .08em; color: #b9c7d5; margin-bottom: 16px; }
+.reliability-bar { display: flex; height: 44px; overflow: hidden; border-radius: 5px; }
+.reliability-bar span { display: grid; place-items: center; background: var(--cyan); color: var(--ink); font-size: 14px; font-weight: 700; }
+.reliability-bar span + span { background: #557194; color: white; }
+.chart-legend { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; color: #b9c7d5; margin-top: 10px; }
+.role-title { display: block; }
+.role-title > span { display: block; margin-bottom: 9px; font-size: 14px; }
+.role-title h3 { font-size: 25px; line-height: 1.35; }
+.role-title small { display: block; color: #aebaca; font-size: 15px; font-weight: 400; margin-top: 5px; }
+.role-results { padding-left: 18px; color: #b9c6d5; margin: 20px 0 0; }
+.role-results li { padding-left: 5px; margin: 12px 0; }
+.role-results strong { color: #f3f6f8; font-weight: 600; }
+.role-date, .role-signal span { color: #a5b4c6; }
+.contact-card { border-radius: 16px; }
+.contact-actions .button { max-width: 100%; overflow-wrap: anywhere; }
+.section { scroll-margin-top: 76px; }
+@media (max-width: 900px) {
+  .hero { gap: 44px; }
+  .proof-grid { grid-template-columns: repeat(2, 1fr); }
+  .proof-grid div:first-child { padding-left: 24px; }
+  .proof-grid div:nth-child(2) { border-right: 0; }
+}
+@media (max-width: 640px) {
+  .hero h1 { font-size: clamp(42px, 12vw, 64px); }
+  .hero-social { justify-content: center; }
+  .proof-grid strong { font-size: 16px; }
+  .proof-grid div, .proof-grid div:first-child { padding: 22px 12px; }
+  .proof-grid span { font-size: 11px; }
+  .brand { font-size: 13px; }
+  .contact-card { padding: 28px 20px; }
+  .contact-card h2 { font-size: 34px; }
+  .contact-actions .button { font-size: 12px; padding-inline: 10px; }
 }
