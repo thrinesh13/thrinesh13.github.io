@@ -3,472 +3,408 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Thrinesh Vuribindi, Data Analyst with 5 years in healthcare and financial services. SQL, Python, Power BI, Tableau, Snowflake, and Microsoft Fabric.">
+<title>Thrinesh Vuribindi | Data Analyst</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Thrinesh Vuribindi, Data Analyst with 4.5+ years in analytics, business intelligence, and data integration across healthcare and financial services.">
 <meta property="og:title" content="Thrinesh Vuribindi | Data Analyst">
-<meta property="og:description" content="Career story, end-to-end analytics projects, and capabilities in SQL, Python, Power BI, and Microsoft Fabric.">
+<meta property="og:description" content="Experience and analytics projects in SQL, Python, Power BI, Tableau, Snowflake, and Microsoft Fabric.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thrinesh13.github.io/">
 <meta property="og:image" content="https://thrinesh13.github.io/profile.jpg">
 <link rel="icon" href="profile.jpg">
-<title>Thrinesh Vuribindi | Data Analyst</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: an analyst's brief. Thesis + portrait, a chronological career story, three case files (question, method, findings, decision), a capability map tied to evidence. */
+/* Layout: one full-width scroll. A deep-green hero band (name, headline, portrait, four proof figures), then light sections: what I do, experience as company rows with metric tiles, selected projects as wide case cards with a results rail, credentials, and a deep-green contact band. */
 :root{
-  --paper:#F4F6F3; --surface:#FFFFFF; --ink:#15201D; --muted:#58665F; --line:#DAE0DB;
-  --accent:#0D6A61; --accent-soft:#E2EFEC; --mark:#B9761A; --mark-soft:#F6EBDA;
-  --bar-a:#0D6A61; --bar-b:#A9BDB6;
+  --paper:#F5F7F4; --surface:#FFFFFF; --ink:#13201C; --muted:#56655E; --line:#DCE2DD;
+  --accent:#0D6A61; --accent-soft:#E3EFEC; --mark:#B5701A; --on-accent:#FFFFFF;
+  --band:#FFFFFF; --band-2:#EDF4F1; --band-ink:#13201C; --band-muted:#56655E; --band-line:#DCE2DD; --band-accent:#0D6A61;
   --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --f-body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --s-1:.8125rem; --s0:1rem; --s1:1.125rem; --s2:1.4rem; --s3:1.9rem; --s4:clamp(1.9rem,4.2vw,2.85rem);
-  --wrap:1120px;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --wrap:1160px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#0E1513; --surface:#151E1B; --ink:#E4EBE8; --muted:#9AA9A3; --line:#26322E;
-  --accent:#4DB6A8; --accent-soft:#183531; --mark:#E2A84A; --mark-soft:#33280F;
-  --bar-a:#4DB6A8; --bar-b:#3A4C46; color-scheme:dark}}
+  --paper:#0D1412; --surface:#141D1A; --ink:#E6EDEA; --muted:#9CABA5; --line:#25312D;
+  --accent:#4DB6A8; --accent-soft:#18322E; --mark:#E2A84A; --on-accent:#0D1412;
+  --band:#0A1F1B; --band-2:#112A25; --band-ink:#EAF2EF; --band-muted:#A3BAB2; --band-line:#244039; --band-accent:#6FD0C1; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --paper:#0E1513; --surface:#151E1B; --ink:#E4EBE8; --muted:#9AA9A3; --line:#26322E;
-  --accent:#4DB6A8; --accent-soft:#183531; --mark:#E2A84A; --mark-soft:#33280F;
-  --bar-a:#4DB6A8; --bar-b:#3A4C46; color-scheme:dark}
+  --paper:#0D1412; --surface:#141D1A; --ink:#E6EDEA; --muted:#9CABA5; --line:#25312D;
+  --accent:#4DB6A8; --accent-soft:#18322E; --mark:#E2A84A; --on-accent:#0D1412;
+  --band:#0A1F1B; --band-2:#112A25; --band-ink:#EAF2EF; --band-muted:#A3BAB2; --band-line:#244039; --band-accent:#6FD0C1; color-scheme:dark}
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.6;margin:0;-webkit-font-smoothing:antialiased}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1rem;line-height:1.65;margin:0;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--band)}
 a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.1;text-wrap:balance;margin:0;letter-spacing:-.01em}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
-.eyebrow{font-family:var(--f-mono);font-size:var(--s-1);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.1;text-wrap:balance;margin:0;letter-spacing:-.015em}
+p,ul,dl,dd,figure{margin:0}
+img{max-width:100%}
 .num{font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-mono);font-size:.72rem;padding:4px 9px;border-radius:6px;background:var(--accent-soft);color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:600;font-size:.92rem;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 
 /* nav */
-.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:color-mix(in srgb,var(--band) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--band-line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.brand{font-family:var(--f-display);font-weight:700;font-size:var(--s1);color:var(--ink);text-decoration:none}
-.nav ul{display:flex;gap:clamp(12px,3vw,28px);list-style:none;margin:0;padding:0}
-.nav ul a{color:var(--muted);text-decoration:none;font-size:.9rem}
-.nav ul a:hover{color:var(--ink)}
-@media (max-width:560px){.nav ul li:nth-child(3){display:none}}
-
-/* hero */
-.hero{padding-block:clamp(40px,7vw,88px) clamp(36px,5vw,64px)}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:center}
-.hero h1{font-size:var(--s4);margin-block:14px 18px}
-.hero h1 .name{display:block;font-size:var(--s2);font-weight:500;color:var(--muted);letter-spacing:0;margin-bottom:10px}
-.lede{font-size:var(--s1);color:var(--muted);max-width:60ch}
-.facts{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;padding:0;list-style:none;font-size:.92rem}
-.facts li{display:flex;align-items:center;gap:8px}
-.facts li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--paper)}
-.btn:hover{border-color:var(--accent)}
-.portrait{position:relative;margin:0;justify-self:end;width:100%;max-width:340px}
-.portrait img{position:relative;display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:22px}
-@media (max-width:760px){
-  .hero .wrap{grid-template-columns:1fr}
-  .portrait{order:-1;max-width:240px;justify-self:start}
-  }
-
-/* sections */
-section.block{padding-block:clamp(48px,7vw,88px);border-top:1px solid var(--line)}
-.sec-head{display:grid;gap:12px;margin-bottom:clamp(28px,4vw,44px);max-width:70ch}
-.sec-head h2{font-size:var(--s3)}
-.sec-head p{color:var(--muted)}
-
-/* career story */
-.story{display:grid;gap:0;position:relative}
-.chapter{display:grid;grid-template-columns:180px minmax(0,1fr);gap:clamp(16px,4vw,48px);padding-block:28px;border-top:1px dashed var(--line)}
-.chapter:first-child{border-top:0;padding-top:0}
-.when{font-family:var(--f-mono);font-size:var(--s-1);color:var(--muted)}
-.when strong{display:block;font-family:var(--f-display);font-size:var(--s2);color:var(--ink);font-weight:700;margin-bottom:4px;letter-spacing:-.01em}
-.chapter h3{font-size:var(--s2);margin-bottom:6px}
-.role{font-size:.92rem;color:var(--muted);margin-bottom:12px}
-.role b{color:var(--ink);font-weight:600}
-.chapter .why{max-width:68ch;margin-bottom:16px}
-.wins{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.wins li{display:grid;grid-template-columns:minmax(118px,auto) minmax(0,1fr);gap:16px;align-items:baseline;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-.wins .fig{font-family:var(--f-display);font-weight:700;font-size:1.15rem;color:var(--accent);white-space:nowrap;font-variant-numeric:tabular-nums}
-@media (max-width:700px){
-  .chapter{grid-template-columns:1fr;gap:8px}
-  .wins li{grid-template-columns:1fr;gap:2px}
+.brand{font-family:var(--f-display);font-weight:700;font-size:1.05rem;color:var(--band-ink);text-decoration:none;white-space:nowrap}
+.nav ul{display:flex;gap:clamp(14px,2.4vw,30px);list-style:none;padding:0}
+.nav ul a{color:var(--band-muted);text-decoration:none;font-size:.9rem;white-space:nowrap}
+.nav ul a:hover,.nav ul a.on{color:var(--band-ink)}
+.pill{font-size:.85rem;font-weight:600;padding:8px 16px;border-radius:999px;background:var(--band-accent);color:var(--band);text-decoration:none;white-space:nowrap}
+@media (max-width:820px){
+  .nav .wrap{flex-wrap:wrap;row-gap:8px}
+  .nav ul{order:3;width:100%;overflow-x:auto;scrollbar-width:none;gap:20px;padding-bottom:2px}
 }
 
-/* case files */
-.cases{display:grid;gap:clamp(28px,4vw,44px)}
-.case{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,3.5vw,40px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
-.case .tag{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-bottom:12px}
-.case h3{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:14px}
-.q{font-size:var(--s1);border-left:3px solid var(--mark);padding-left:14px;margin-bottom:20px}
-.steps{display:grid;gap:14px;margin:0;padding:0;list-style:none}
-.steps li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px}
-.steps .k{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
-.chip{font-family:var(--f-mono);font-size:.75rem;padding:4px 9px;border-radius:6px;background:var(--accent-soft);color:var(--ink)}
-.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.side{display:grid;gap:18px;align-content:start;min-width:0}
-.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.kpi{border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.kpi b{display:block;font-family:var(--f-display);font-size:1.45rem;line-height:1.15;font-variant-numeric:tabular-nums}
-.kpi span{font-size:.82rem;color:var(--muted);line-height:1.35;display:block;margin-top:4px}
-.kpi.hl b{color:var(--mark)}
-.chart{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-.chart h4{font-family:var(--f-mono);font-weight:500;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
-.chart svg{display:block;width:100%;height:auto;overflow:visible}
-.chart svg text{fill:var(--ink);font-family:var(--f-body);font-size:12px}
-.chart svg .m{fill:var(--muted)}
-.caveat{font-size:.82rem;color:var(--muted)}
-@media (max-width:860px){.case{grid-template-columns:1fr}}
-@media (max-width:480px){.steps li{grid-template-columns:1fr;gap:2px}}
+/* hero band */
+.hero{background:var(--band);color:var(--band-ink);padding-block:clamp(48px,8vw,96px) 0;border-bottom:1px solid var(--band-line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.75fr);gap:clamp(32px,6vw,80px);align-items:center}
+.hero .eyebrow{color:var(--band-accent)}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.4rem);margin-top:14px}
+.hero .headline{font-family:var(--f-display);font-weight:500;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.3;margin-top:16px;max-width:30ch;color:var(--band-ink)}
+.hero .sub{color:var(--band-muted);margin-top:16px;max-width:56ch}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:.85rem;padding:6px 14px 6px 12px;border-radius:999px;border:1px solid var(--band-line);color:var(--band-ink)}
+.status::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--band-accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--band-accent) 22%,transparent)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;align-items:center}
+.hero .btn{background:transparent;color:var(--band-ink);border-color:var(--band-line)}
+.hero .btn:hover{border-color:var(--band-accent)}
+.hero .btn.primary{background:var(--band-accent);border-color:var(--band-accent);color:var(--band)}
+.icon{width:44px;height:44px;padding:0;justify-content:center}
+.icon svg{width:18px;height:18px;fill:currentColor}
+.portrait{position:relative;justify-self:end;width:100%;max-width:340px}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:24px;background:var(--band-2)}
+.badge{position:absolute;left:-18px;bottom:22px;display:grid;gap:2px;padding:12px 16px;border-radius:14px;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 14px 34px rgba(15,42,37,.14);max-width:230px}
+.badge b{font-size:.86rem;font-weight:600;line-height:1.3}
+.badge span{font-size:.74rem;color:var(--muted)}
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(44px,6vw,72px);border-top:1px solid var(--band-line)}
+.proof div{padding:24px 20px 28px;border-left:1px solid var(--band-line);min-width:0}
+.proof div:first-child{border-left:0;padding-left:0}
+.proof b{display:block;font-family:var(--f-display);font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1;color:var(--band-accent)}
+.proof span{display:block;margin-top:8px;font-size:.84rem;color:var(--band-muted);line-height:1.4}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{order:-1;justify-self:start;max-width:200px}
+  .portrait img{aspect-ratio:1/1;border-radius:20px}
+  .badge{display:none}
+  .proof{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof div:nth-child(3){border-left:0;padding-left:0}
+  .proof div:nth-child(n+3){border-top:1px solid var(--band-line)}
+}
 
-table.verdicts{width:100%;border-collapse:collapse;font-size:.88rem}
-.verdicts td{padding:9px 6px;border-top:1px solid var(--line);vertical-align:top}
-.verdicts tr:first-child td{border-top:0}
-.verdicts .v{white-space:nowrap;font-family:var(--f-mono);font-size:.75rem;font-weight:500}
-.v.no{color:var(--accent)} .v.maybe{color:var(--mark)}
-.verdicts .e{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);white-space:nowrap;text-align:right}
+/* sections */
+section.block{padding-block:clamp(64px,9vw,112px)}
+section.block + section.block{border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:16px clamp(24px,5vw,64px);align-items:end;margin-bottom:clamp(32px,5vw,52px)}
+.head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-top:10px}
+.head p{color:var(--muted);font-size:1.05rem;max-width:60ch}
+@media (max-width:860px){.head{grid-template-columns:1fr}}
 
-/* capability map */
+/* what I do */
 .caps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.cap{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px}
-.cap h3{font-size:var(--s1)}
-.cap p{font-size:.92rem;color:var(--muted)}
-.cap .tools{font-family:var(--f-mono);font-size:.78rem;line-height:1.6;color:var(--ink)}
-.cap .proof{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line);font-size:.82rem;color:var(--muted)}
-.cap .proof b{color:var(--ink);font-weight:600}
-@media (max-width:900px){.caps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:600px){.caps{grid-template-columns:1fr}}
+.cap{display:flex;flex-direction:column;gap:12px;padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:18px;min-width:0}
+.cap h3{font-size:1.12rem}
+.cap p{font-size:.9rem;color:var(--muted)}
+.cap .chips{margin-top:auto;padding-top:6px}
+.domain{margin-top:22px;padding:16px 20px;border-radius:14px;background:var(--accent-soft);font-size:.93rem}
+.domain b{font-weight:600}
+@media (max-width:960px){.caps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.caps{grid-template-columns:1fr}}
+
+/* experience */
+.roles{display:grid;gap:18px}
+.role{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(20px,4vw,48px);padding:clamp(22px,3vw,32px);background:var(--surface);border:1px solid var(--line);border-radius:20px}
+.role-meta{display:flex;flex-direction:column;gap:6px;align-self:start;padding-right:clamp(0px,2vw,24px);border-right:1px solid var(--line)}
+.role-meta .title{font-family:var(--f-display);font-weight:700;font-size:1.45rem;line-height:1.15;color:var(--ink)}
+.role-meta .co{font-weight:600;font-size:1rem;color:var(--accent)}
+.role-meta .ind{align-self:flex-start;margin-top:4px;font-size:.74rem;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--ink)}
+.facts-row{list-style:none;padding:14px 0 0;margin:8px 0 0;border-top:1px dashed var(--line);display:grid;gap:8px}
+.facts-row li{display:flex;gap:10px;align-items:flex-start;font-size:.85rem;color:var(--muted);line-height:1.4}
+.facts-row svg{flex:none;width:16px;height:16px;margin-top:2px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:760px){.role-meta{border-right:0;padding-right:0}}
+.role-body{display:grid;gap:18px;min-width:0}
+.metrics{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.metrics li{display:grid;gap:6px;align-content:start;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);min-width:0}
+.metrics b{font-family:var(--f-display);font-size:1.4rem;line-height:1.1;color:var(--accent)}
+.metrics span{font-size:.78rem;line-height:1.4;color:var(--muted)}
+.role-body p{color:var(--ink);font-size:.96rem;max-width:78ch}
+.impact{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mark);margin-bottom:-8px}
+@media (max-width:1100px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.role{grid-template-columns:1fr;gap:16px}}
+@media (max-width:400px){.metrics b{font-size:1.15rem}}
+
+/* projects */
+.projects{display:grid;gap:22px}
+.case{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.story{display:grid;gap:16px;align-content:start;padding:clamp(24px,3.4vw,40px);min-width:0}
+.story h3{font-size:clamp(1.4rem,2.6vw,1.9rem)}
+.hook{font-size:1.04rem}
+.line{font-size:.93rem;color:var(--muted)}
+.line.out{color:var(--ink)}
+.label{display:inline-block;margin-right:8px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.note{font-size:.78rem;color:var(--muted)}
+.rail{display:flex;flex-direction:column;gap:0;padding:clamp(24px,3.4vw,40px);background:var(--accent-soft);border-left:1px solid var(--line);min-width:0}
+.rail .eyebrow{margin-bottom:6px}
+.res{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--accent) 22%,transparent)}
+.res:last-of-type{border-bottom:0}
+.res b{display:block;font-family:var(--f-display);font-size:clamp(1.5rem,2.6vw,1.9rem);line-height:1.1;color:var(--ink)}
+.res.hl b{color:var(--mark)}
+.res span{display:block;margin-top:4px;font-size:.84rem;color:var(--muted)}
+.rail .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:18px}
+.rail .btn{padding:8px 14px;font-size:.86rem}
+@media (max-width:900px){.case{grid-template-columns:1fr}.rail{border-left:0;border-top:1px solid var(--line)}}
 
 /* credentials */
 .creds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.cred{padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
-.cred .eyebrow{display:block;margin-bottom:6px}
-.cred h3{font-size:1.1rem;margin-bottom:4px}
+.cred{display:grid;gap:6px;align-content:start;padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.cred .eyebrow{color:var(--muted)}
+.cred h3{font-size:1.08rem;line-height:1.3}
 .cred p{font-size:.9rem;color:var(--muted)}
-@media (max-width:800px){.creds{grid-template-columns:1fr}}
+@media (max-width:860px){.creds{grid-template-columns:1fr}}
 
-/* contact */
-.contact .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:start}
-.contact h2{font-size:var(--s3);margin-bottom:12px}
-.contact p{color:var(--muted);max-width:52ch}
-.rows{display:grid;gap:10px}
-.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
-.row .l{font-family:var(--f-mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.row .v{font-weight:500;overflow-wrap:anywhere;text-align:right}
-.copy{font:inherit;font-size:.8rem;padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
-@media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
-footer{padding-block:28px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+/* contact band */
+.contact{background:var(--band-2);border-top:1px solid var(--band-line);color:var(--band-ink);padding-block:clamp(64px,8vw,104px)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.95fr);gap:clamp(32px,6vw,80px);align-items:center}
+.contact .eyebrow{color:var(--band-accent)}
+.contact h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-top:12px;max-width:22ch}
+.contact .lead{color:var(--band-muted);font-size:1.02rem;max-width:58ch;margin-top:16px}
+.facts{margin:26px 0 0;display:grid;gap:0;border-top:1px solid var(--band-line)}
+.facts div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--band-line)}
+.facts dt{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--band-accent);padding-top:3px}
+.facts dd{margin:0;font-size:.94rem;font-weight:500}
+@media (max-width:480px){.facts div{grid-template-columns:1fr;gap:4px}}
+.contact-card{display:grid;gap:10px;padding:clamp(20px,3vw,28px);background:var(--band);border:1px solid var(--band-line);border-radius:22px;box-shadow:0 18px 44px rgba(15,42,37,.08);min-width:0}
+.card-k{font-family:var(--f-display);font-weight:700;font-size:1.15rem;margin-bottom:4px}
+.crow{display:flex;align-items:center;gap:14px;padding:12px 14px;border:1px solid var(--band-line);border-radius:14px;background:var(--band-2);color:var(--band-ink);text-decoration:none;min-width:0}
+.crow.link:hover{border-color:var(--band-accent)}
+.ic{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--band);border:1px solid var(--band-line);color:var(--band-accent)}
+.ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ic svg.fill{fill:currentColor;stroke:none}
+.ct{display:grid;gap:1px;min-width:0;flex:1}
+.cl{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted)}
+.ct .v{font-weight:600;font-size:.9rem;overflow-wrap:anywhere}
+.crow .ct .v[data-email]{word-break:normal}
+@media (max-width:420px){.ct .v{font-size:.86rem}.crow{gap:10px;padding:10px 12px}.ic{display:none}.contact-card{padding:18px}}
+.arr{color:var(--band-muted);font-size:1rem}
+.copy{flex:none;font:inherit;font-size:.74rem;font-weight:600;padding:5px 10px;border-radius:999px;border:0;background:var(--band-accent);color:var(--band);cursor:pointer}
+.mail-btn{justify-content:center;margin-top:6px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+footer{background:var(--band-2);color:var(--band-muted);font-size:.8rem;border-top:1px solid var(--band-line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-block:22px}
 </style>
 </head>
 <body>
-
 
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#top">Thrinesh Vuribindi</a>
     <ul>
-      <li><a href="#story">Experience</a></li>
-      <li><a href="#work">Projects</a></li>
-      <li><a href="#capabilities">Capabilities</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
     </ul>
+    <a class="pill" href="#contact">Contact</a>
   </div>
 </nav>
 
-<main id="top">
-<header class="hero">
+<header class="hero" id="top">
   <div class="wrap">
-    <div>
-      <span class="eyebrow">Data Analyst · Business Intelligence · Reporting</span>
-      <h1><span class="name">Thrinesh Vuribindi</span>I turn complex data into clear insights that help teams understand what’s happening, why it matters, and where to act.</h1>
-      <p class="lede">For 5 years I have worked across healthcare and financial services data. I frame the business question, clean and model the data in SQL and Python, build the dashboards in Power BI and Tableau, and explain the result in plain language to the people making the call.</p>
-      <ul class="facts">
-        <li>5 years experience</li>
-        <li>Healthcare and financial services</li>
-        <li>Microsoft Certified: Fabric Analytics Engineer (DP-600)</li>
-        <li>Chicago, IL</li>
-      </ul>
-      <div class="actions">
-        <a class="btn primary" href="#work">See my work</a>
-        <a class="btn" href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/thrinesh13" target="_blank" rel="noopener">GitHub</a>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Data Analyst · Healthcare and Financial Services</span>
+        <h1>Thrinesh Vuribindi</h1>
+        <p class="headline">I turn complex data from multiple systems into reliable reporting and actionable business insights.</p>
+        <p class="sub">4.5+ years across data analysis, BI development, and data integration.</p>
+        <span class="status">Open to data roles · Open to relocation</span>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn icon" href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.84-2.05 3.78-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg></a>
+          <a class="btn icon" href="https://github.com/thrinesh13" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+        </div>
       </div>
+      <figure class="portrait">
+        <img src="profile.jpg" alt="Portrait of Thrinesh Vuribindi" width="340" height="425">
+      </figure>
     </div>
-    <figure class="portrait">
-      <img src="profile.jpg" alt="Portrait of Thrinesh Vuribindi" width="340" height="340">
-    </figure>
+    <div class="proof num" aria-label="Highlights">
+      <div><b>12M+</b><span>claims and eligibility records analyzed monthly</span></div>
+      <div><b>10+</b><span>source systems integrated into one warehouse</span></div>
+      <div><b>40+</b><span>KPIs in 6 production Power BI dashboards</span></div>
+      <div><b>150+</b><span>report users on one consolidated solution</span></div>
+    </div>
   </div>
 </header>
 
-<section class="block" id="story" aria-labelledby="story-h">
+<main>
+<section class="block" id="about" aria-labelledby="about-h">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Experience</span>
-      <h2 id="story-h">Each role added a layer.</h2>
-      <p>Today I work at enterprise scale, where the data spans many platforms and the reporting has to hold up to audits. Before that, I built BI reporting that turned stakeholder requests into dashboards people trust. I started in financial analysis, finding the cost drivers in the numbers.</p>
-    </div>
-
-    <div class="story">
-
-      <article class="chapter">
-        <div class="when"><strong>2025</strong>May 2025 to present</div>
-        <div>
-          <h3>Analytics at enterprise scale</h3>
-          <p class="role"><b>Data Analyst, UnitedHealth Group</b> · Healthcare</p>
-          <p class="why">Now the work spans many systems and business units, so my focus is reliable pipelines, traceable numbers, and reporting that people can serve themselves.</p>
-          <ul class="wins">
-            <li><span class="fig">12M+ records</span><span>Analyze monthly claims and eligibility data in Snowflake with SQL and SAS. Traced lineage across Snowflake, SQL Server, Oracle, and SAP HANA to resolve 19 claims discrepancies before CMS submission.</span></li>
-            <li><span class="fig">3 days → &lt;1 day</span><span>Automated 7 recurring reporting workflows with Python, SSIS, and Fabric pipelines, saving about 12 hours of manual work a week.</span></li>
-            <li><span class="fig">40+ KPIs</span><span>Delivered 6 production Power BI dashboards across utilization, reimbursement, quality, revenue cycle, and cost for 15+ stakeholders in 8 business units, and trained 30 users across 3 teams to self-serve them.</span></li>
-            <li><span class="fig">10+ sources</span><span>Integrated source systems through Azure Data Factory and ADLS Gen2 and standardized 33 fact and dimension tables in Microsoft Fabric with Data Engineering.</span></li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="chapter">
-        <div class="when"><strong>2022</strong>Jan 2022 to Aug 2023</div>
-        <div>
-          <h3>Turning requests into reporting people trust</h3>
-          <p class="role"><b>Data Analyst, Infosys</b></p>
-          <p class="why">I learned that a dashboard is only as useful as the agreement behind its metrics, so I started every build with requirements, definitions, and validation.</p>
-          <ul class="wins">
-            <li><span class="fig">20+ KPIs</span><span>Defined KPIs and dashboard acceptance criteria through 10 requirements sessions with 12 stakeholders, closing 6 reporting gaps.</span></li>
-            <li><span class="fig">2 hrs → 20 min</span><span>Consolidated 4 Excel, Google Sheets, and SSRS reports into one Power BI solution with star-schema models, serving 150+ users.</span></li>
-            <li><span class="fig">90% automated</span><span>Automated pre-refresh validation on HIPAA-regulated data that had been fully manual, with zero discrepancies reaching users.</span></li>
-          </ul>
-        </div>
-      </article>
-      <article class="chapter">
-        <div class="when"><strong>2020</strong>Jun 2020 to Dec 2021</div>
-        <div>
-          <h3>Finding the numbers that matter</h3>
-          <p class="role"><b>Associate Data Analyst, Genpact</b> · Financial services client</p>
-          <p class="why">Variance analysis and forecasting in Advanced Excel taught me to start from the business question and work back to the data.</p>
-          <ul class="wins">
-            <li><span class="fig">$180K / 8%</span><span>Contributed to annual operating-cost savings by analyzing revenue, cost, gross margin, and backlog variance and presenting cost drivers to business owners.</span></li>
-            <li><span class="fig">13 categories</span><span>Built forecasting and budgeting models with Power Pivot, PivotTables, and SUMIFS, and automated actual-to-budget comparisons for monthly planning.</span></li>
-            <li><span class="fig">4 hrs → 30 min</span><span>Cut weekly report preparation by rebuilding the manual steps in Power Query.</span></li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="work" aria-labelledby="work-h">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Projects</span>
-      <h2 id="work-h">Three problems, worked end to end.</h2>
-      <p>Each project starts with a business question, shows the method, and ends with a recommendation and its limits. All code, notebooks, and reports are on GitHub.</p>
-    </div>
-
-    <div class="cases">
-      <!-- Case 1 -->
-      <article class="case">
-        <div>
-          <div class="tag"><span class="eyebrow">Operations analytics · Data pipeline · BI</span></div>
-          <h3>Surgical Scheduling Variance Analysis</h3>
-          <p class="q">How accurately does a hospital estimate surgery length, what do the misses cost, and which procedures should be fixed first?</p>
-          <ul class="steps">
-            <li><span class="k">Data</span><span>Loaded about 1.88M raw rows from a de-identified UC Irvine surgical dataset into a Microsoft Fabric lakehouse with bronze, silver, and gold layers.</span></li>
-            <li><span class="k">Quality</span><span>Removed 1,366 duplicates, repaired 13 broken timestamps, flagged every change, and documented each row count from 65,728 records to a 48,118-case cohort.</span></li>
-            <li><span class="k">Method</span><span>Benchmarked each of 418 procedures on its historical median, since a few very long surgeries skew the mean. Tested the minimum-volume rule before fixing it at 30 cases.</span></li>
-            <li><span class="k">Decision</span><span>Recommended reviewing 133 procedures first, cleaning up 207 procedure names that mix different operations, and starting to record booked durations.</span></li>
-          </ul>
-          <div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Spark SQL</span><span class="chip">Power BI</span><span class="chip">DAX (17 measures)</span><span class="chip">Data quality</span></div>
-          <div class="links">
-            <a class="btn primary" href="https://thrinesh13.github.io/Surgical-Scheduling-Variance-Analysis/dashboard/" target="_blank" rel="noopener">Open live dashboard ↗</a>
-            <a class="btn" href="https://github.com/thrinesh13/Surgical-Scheduling-Variance-Analysis" target="_blank" rel="noopener">Code and docs ↗</a>
-          </div>
-        </div>
-        <div class="side">
-          <div class="kpis">
-            <div class="kpi hl"><b>$15.8M to $27.1M</b><span>estimated yearly cost exposure from scheduling variance</span></div>
-            <div class="kpi"><b>53.3%</b><span>of cases missed their benchmark by more than 30 minutes</span></div>
-            <div class="kpi"><b>133 of 418</b><span>procedures drive 53.6% of the variation</span></div>
-            <div class="kpi"><b>2,167 hrs</b><span>of room time lost each year to early finishes alone</span></div>
-          </div>
-          <div class="chart">
-            <h4>Data cleaning checkpoints, rows kept</h4>
-            <svg viewBox="0 0 400 150" role="img" aria-label="Rows kept at each cleaning step: raw 65,728; deduplicated 64,362; usable duration 57,861; cases in scope 48,118.">
-              <g class="num">
-                <text x="0" y="16">Raw records</text><rect x="150" y="5" width="200" height="16" rx="3" fill="var(--bar-b)"/><text x="400" y="17" text-anchor="end">65,728</text>
-                <text x="0" y="52">Duplicates removed</text><rect x="150" y="41" width="195.8" height="16" rx="3" fill="var(--bar-b)"/><text x="400" y="53" text-anchor="end">64,362</text>
-                <text x="0" y="88">Usable duration</text><rect x="150" y="77" width="176.1" height="16" rx="3" fill="var(--bar-b)"/><text x="400" y="89" text-anchor="end">57,861</text>
-                <text x="0" y="124">Cases in scope</text><rect x="150" y="113" width="146.4" height="16" rx="3" fill="var(--bar-a)"/><text x="400" y="125" text-anchor="end">48,118</text>
-              </g>
-            </svg>
-          </div>
-          <p class="caveat">Cost range uses illustrative rates of $35 to $60 per OR minute and is a planning scenario, not a measured loss.</p>
-        </div>
-      </article>
-
-      <!-- Case 2 -->
-      <article class="case">
-        <div>
-          <div class="tag"><span class="eyebrow">Payment integrity · SQL modeling · Cost analysis</span></div>
-          <h3>Medicare Claims Payment Integrity Analytics</h3>
-          <p class="q">Every claim went to a manual reviewer, yet bad claims still got paid. Which claims can be decided safely by rules, and when does automation stop saving money?</p>
-          <ul class="steps">
-            <li><span class="k">Data</span><span>Cleaned 10 messy extracts in Python (mixed date formats, overlapping files, duplicate remittance batches, NPI check-digit validation) and loaded staging, core, and mart schemas in PostgreSQL.</span></li>
-            <li><span class="k">Method</span><span>Wrote 10 SQL prepayment edits from published Medicare billing rules and scored them against the payer's final decision with a confusion matrix.</span></li>
-            <li><span class="k">Finding</span><span>Denials rose from 5.8% to 6.8% in 2025 to 8.2% in 2026. The 296 missed claims were mostly medical necessity and missing information, which need records review, not more rules.</span></li>
-            <li><span class="k">Decision</span><span>Recommended 6 edits that auto-deny, 4 that route to a reviewer, and provider outreach starting with the top quartile, which accounts for 63% of flagged claims.</span></li>
-          </ul>
-          <div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Python (pandas)</span><span class="chip">Power BI</span><span class="chip">What-if analysis</span><span class="chip">Sensitivity analysis</span></div>
-          <div class="links">
-            <a class="btn" href="https://github.com/thrinesh13/Medicare-Claims-Payment-Integrity-Analytics" target="_blank" rel="noopener">Code and report ↗</a>
-          </div>
-        </div>
-        <div class="side">
-          <div class="kpis">
-            <div class="kpi hl"><b>$425K → $120K</b><span>modeled decision cost, full review vs. rule-based routing</span></div>
-            <div class="kpi"><b>96%</b><span>of 23,631 claims decided without manual review</span></div>
-            <div class="kpi"><b>82%</b><span>of improper claims caught before payment</span></div>
-            <div class="kpi"><b>93.3%</b><span>accuracy on the 1,485 claims the edits flagged</span></div>
-          </div>
-          <div class="chart">
-            <h4>Manual reviews needed</h4>
-            <svg viewBox="0 0 400 96" role="img" aria-label="Manual reviews: 23,631 under full review versus 854 under rule-based routing.">
-              <g class="num">
-                <text x="0" y="17">Review everything</text><rect x="140" y="6" width="200" height="16" rx="3" fill="var(--bar-b)"/><text x="400" y="18" text-anchor="end">23,631</text>
-                <text x="0" y="55">Rule-based routing</text><rect x="140" y="44" width="7.2" height="16" rx="3" fill="var(--bar-a)"/><text x="400" y="56" text-anchor="end">854</text>
-                <text class="m" x="140" y="88">Break-even: rules stay cheaper until a missed claim costs over $1,281.</text>
-              </g>
-            </svg>
-          </div>
-          <p class="caveat">Synthetic claims built on real CMS file layouts and code sets. Dollar figures are a scenario with adjustable inputs in the report.</p>
-        </div>
-      </article>
-
-      <!-- Case 3 -->
-      <article class="case">
-        <div>
-          <div class="tag"><span class="eyebrow">Statistical analysis · Time series</span></div>
-          <h3>Statistical Time-Series Analysis</h3>
-          <p class="q">Do four common beliefs about stock behavior hold up when tested on five years of daily Apple market data?</p>
-          <ul class="steps">
-            <li><span class="k">Data</span><span>Collected five years of daily Apple stock data (1,254 trading days), checked it for missing values and duplicates, and added calculated fields such as daily percentage change and 30-day volatility.</span></li>
-            <li><span class="k">Method</span><span>Tested each belief with t-tests, correlation analysis, a normality test, and monthly and weekday trend analysis.</span></li>
-            <li><span class="k">Finding</span><span>Price and volume showed a -0.40 correlation, but daily returns and volume showed almost none (0.01). The first number came from two opposite long-term trends, not a real relationship.</span></li>
-            <li><span class="k">Takeaway</span><span>How a metric is defined can change the conclusion. Volatility in dollars looked like rising risk, while volatility in percentages showed it stayed stable.</span></li>
-          </ul>
-          <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">SciPy</span><span class="chip">Hypothesis testing</span><span class="chip">Correlation analysis</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></div>
-          <div class="links">
-            <a class="btn" href="https://github.com/thrinesh13/Statistical-Time-series-analysis" target="_blank" rel="noopener">Notebook and findings ↗</a>
-          </div>
-        </div>
-        <div class="side">
-          <div class="chart">
-            <h4>Four beliefs, tested</h4>
-            <table class="verdicts">
-              <tr><td>Higher price means higher risk</td><td class="e">steady at 1.65% daily</td><td class="v no">Not supported</td></tr>
-              <tr><td>Volume predicts price direction</td><td class="e">p = 0.267</td><td class="v no">Not supported</td></tr>
-              <tr><td>Calendar patterns repeat</td><td class="e">changed year to year</td><td class="v maybe">Inconclusive</td></tr>
-              <tr><td>Daily returns are normal</td><td class="e">kurtosis 6.64</td><td class="v no">Not supported</td></tr>
-            </table>
-          </div>
-          <div class="kpis">
-            <div class="kpi"><b>1,254</b><span>trading days analyzed, Aug 2021 to Aug 2026</span></div>
-            <div class="kpi"><b>3 of 4</b><span>common assumptions not supported by the data</span></div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="capabilities" aria-labelledby="cap-h">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Capabilities</span>
-      <h2 id="cap-h">What I bring to a team.</h2>
-      <p>Grouped by the work, not the tool. Each area reflects work I have done across my roles and projects.</p>
+    <div class="head">
+      <div><span class="eyebrow">About</span><h2 id="about-h">What I do</h2></div>
+      <p>I use SQL, Python, Snowflake, and Microsoft Fabric to turn operational, financial, and claims data into analysis and Power BI and Tableau reporting that leaders use to find cost drivers, track performance, and decide where to act.</p>
     </div>
     <div class="caps">
-      <div class="cap">
-        <h3>Problem framing and requirements</h3>
-        <p>Turning a vague ask into a defined question, agreed KPIs, and acceptance criteria before building anything.</p>
-        <div class="tools">Requirements gathering · KPI definition · Acceptance criteria · UAT · Agile · JIRA</div>
-      </div>
-      <div class="cap">
-        <h3>Data preparation and quality</h3>
-        <p>Profiling, cleaning, reconciling, and tracing data so the numbers hold up when someone asks where they came from.</p>
-        <div class="tools">Data profiling · Validation · Reconciliation · Data lineage · Source-to-target mapping · Data dictionaries</div>
-      </div>
-      <div class="cap">
-        <h3>Analysis and statistics</h3>
-        <p>Choosing the right measure and test, then saying clearly what the evidence does and does not support.</p>
-        <div class="tools">Hypothesis testing · A/B testing · Correlation · Trend and seasonality · Forecasting · Variance and root-cause analysis</div>
-      </div>
-      <div class="cap">
-        <h3>BI and reporting</h3>
-        <p>Star-schema models, tested DAX, and dashboards built so stakeholders can answer their own follow-up questions.</p>
-        <div class="tools">Power BI (DAX, Power Query, RLS, Service) · Tableau · SSRS · Advanced Excel · Microsoft Copilot</div>
-      </div>
-      <div class="cap">
-        <h3>Query, code, and platforms</h3>
-        <p>Writing the SQL and Python that move data from source systems into models people can use.</p>
-        <div class="tools">SQL (CTEs, window functions, T-SQL) · Python · SAS · PySpark · Snowflake · Microsoft Fabric · Databricks · SQL Server · Oracle · PostgreSQL · Azure Data Factory · SSIS · dbt</div>
-      </div>
-      <div class="cap">
-        <h3>Communication and enablement</h3>
-        <p>Explaining findings in plain language, stating limits up front, and documenting so others can work without me.</p>
-        <div class="tools">Stakeholder presentations · User training · Documentation · Cross-team collaboration with IT and Data Engineering</div>
-      </div>
+      <article class="cap"><h3>SQL and analytics</h3><p>Complex SQL (CTEs, window functions, stored procedures) and Python for exploratory analysis of cost, utilization, and performance, finding the drivers behind trends and variances.</p><div class="chips"><span class="chip">SQL</span><span class="chip">Python (pandas)</span><span class="chip">Excel</span><span class="chip">Statistical analysis</span><span class="chip">Forecasting</span><span class="chip">A/B testing</span></div></article>
+      <article class="cap"><h3>Business intelligence</h3><p>Power BI dashboards and semantic models I build and maintain, with dynamic row-level security, scheduled refreshes, and governed KPI definitions, plus Tableau dashboards for leadership, operations, and finance.</p><div class="chips"><span class="chip">Power BI (DAX)</span><span class="chip">Power Query</span><span class="chip">Power BI Service</span><span class="chip">Tableau</span><span class="chip">SSRS</span></div></article>
+      <article class="cap"><h3>Data integration</h3><p>ETL and data ingestion from flat files, APIs, and relational databases into Snowflake and Microsoft Fabric, with data profiling, cleansing, and source-to-target mappings.</p><div class="chips"><span class="chip">Azure Data Factory</span><span class="chip">SSIS</span><span class="chip">Airflow</span><span class="chip">dbt</span><span class="chip">Python</span></div></article>
+      <article class="cap"><h3>Data modeling</h3><p>Star-schema fact and dimension models, data warehousing, and medallion layers that give reporting one source of truth.</p><div class="chips"><span class="chip">Snowflake</span><span class="chip">Microsoft Fabric</span><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">Databricks</span></div></article>
+      <article class="cap"><h3>Data quality and governance</h3><p>Validation, reconciliation, and lineage checks, plus data dictionaries, KPI definitions, and access controls that keep reporting consistent and compliant.</p><div class="chips"><span class="chip">Data profiling</span><span class="chip">Reconciliation</span><span class="chip">Data lineage</span><span class="chip">Metadata</span><span class="chip">Row-level security</span></div></article>
+      <article class="cap"><h3>Requirements and delivery</h3><p>Requirements gathering, functional specifications, UAT, and user training, working in Agile teams with business and technical stakeholders.</p><div class="chips"><span class="chip">Requirements gathering</span><span class="chip">UAT</span><span class="chip">Jira</span><span class="chip">Agile/Scrum</span><span class="chip">Documentation</span></div></article>
+    </div>
+    <p class="domain"><b>Domain knowledge:</b> healthcare claims, eligibility, and clinical data (HEDIS/Stars, Epic EHR, ICD-10/CPT, CMS, HIPAA), plus financial planning, cost, and operational reporting.</p>
+  </div>
+</section>
+
+<section class="block" id="experience" aria-labelledby="exp-h">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">Experience</span><h2 id="exp-h">Where I've delivered</h2></div>
+    </div>
+    <div class="roles">
+      <article class="role">
+        <div class="role-meta"><span class="title">Data Analyst</span><span class="co">UnitedHealth Group</span><span class="ind">Enterprise healthcare</span><ul class="facts-row"><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>May 2025 to present</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Chicago, IL</span></li></ul></div>
+        <div class="role-body">
+          <p>I own end-to-end reporting for 8 healthcare business units, from ETL pipelines across 10+ source systems to 6 production Power BI dashboards that I build and maintain, including the semantic models, row-level security, and scheduled refreshes in Power BI Service. Operations, finance, and clinical operations leaders use them to track utilization and cost, and I partner with IT and data engineering to keep them accurate.</p>
+          <span class="impact">Impact</span>
+          <ul class="metrics num"><li><b>3 days → &lt;1 day</b><span>report turnaround for 8 business units after automating 7 recurring workflows</span></li><li><b>19</b><span>claims errors fixed before CMS submission, protecting regulatory reporting accuracy</span></li><li><b>25%</b><span>less Tableau Server processing load after tuning slow SQL queries</span></li><li><b>40%</b><span>fewer ad hoc report requests after training 30 users to self-serve</span></li></ul>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">Snowflake</span><span class="chip">Microsoft Fabric</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Tableau</span></div>
+        </div>
+      </article>
+      <article class="role">
+        <div class="role-meta"><span class="title">Data Analyst</span><span class="co">Infosys</span><span class="ind">IT consulting · Health plan client</span><ul class="facts-row"><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Jan 2022 to Aug 2023</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>India</span></li></ul></div>
+        <div class="role-body">
+          <p>I owned BI reporting for a health plan client. I gathered requirements with business stakeholders, wrote SQL stored procedures and ETL across four source systems, and validated HIPAA-regulated data before every refresh. Revenue cycle, care management, and leadership teams relied on the Power BI solution I built on a star-schema data model with DAX measures, used by 150+ people.</p>
+          <span class="impact">Impact</span>
+          <ul class="metrics num"><li><b>2+ hrs → 20 min</b><span>reporting time after replacing 4 legacy reports with one Power BI solution</span></li><li><b>Manual → 90%</b><span>pre-refresh validation automated, with zero discrepancies reaching users</span></li><li><b>+30%</b><span>more reliable care management and quality reporting from analytics-ready clinical datasets</span></li><li><b>+20%</b><span>payer submission accuracy after reconciling ICD-10 and CPT codes</span></li></ul>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">SSIS</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span></div>
+        </div>
+      </article>
+      <article class="role">
+        <div class="role-meta"><span class="title">Associate Data Analyst</span><span class="co">Genpact</span><span class="ind">IT consulting</span><ul class="facts-row"><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Jun 2020 to Dec 2021</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>India</span></li></ul></div>
+        <div class="role-body">
+          <p>I delivered client data operations and financial reporting. I cleaned and validated raw client files, built Excel forecasting models, and ran variance analysis against budget. Client business owners and FP&amp;A teams used the findings to plan budgets and control costs.</p>
+          <span class="impact">Impact</span>
+          <ul class="metrics num"><li><b>4 hrs → 30 min</b><span>weekly report prep after automating with Power Query and VBA</span></li><li><b>92%</b><span>of client records delivered clean, with source errors flagged to the client</span></li><li><b>8% ($180K)</b><span>annual operating cost reduction supported by variance findings</span></li><li><b>13</b><span>cost and revenue categories forecast for monthly planning</span></li></ul>
+          <div class="chips"><span class="chip">Advanced Excel</span><span class="chip">Power Query</span><span class="chip">Excel VBA</span><span class="chip">SQL</span></div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="block" aria-labelledby="cred-h">
+<section class="block" id="projects" aria-labelledby="proj-h">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">Credentials</span><h2 id="cred-h">Certification and education</h2></div>
+    <div class="head">
+      <div><span class="eyebrow">Projects</span><h2 id="proj-h">Selected work</h2></div>
+    </div>
+    <div class="projects">
+      <article class="case">
+        <div class="story">
+          <span class="eyebrow">Payment integrity · Data validation · Rules automation</span>
+          <h3>Medicare Claims Payment Integrity</h3>
+          <p class="hook">Manually reviewing every claim was modeled at $425K, and improper payments still got through. I tested which claims rules can safely decide before payment.</p>
+          <p class="line"><span class="label">Approach</span>Cleaned 10 raw claims extracts in Python and built staging, core, and mart layers in PostgreSQL. Translated Medicare Part B billing rules into 10 SQL prepayment edits and validated them against payer decisions.</p>
+          <p class="line out"><span class="label">Outcome</span>Rules can route 96% of claims at 93.3% edit accuracy, tracked in a 4-page Power BI report with drill-through KPIs and what-if cost scenarios. Human review stays for medical necessity and missing documentation, where rules fall short.</p>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">Power BI</span></div>
+          <p class="note">Synthetic claims on real CMS file layouts and code sets.</p>
+        </div>
+        <aside class="rail num" aria-label="Key results">
+          <span class="eyebrow">Key results</span>
+          <div class="res hl"><b>$425K → $120K</b><span>modeled review cost</span></div>
+          <div class="res"><b>23.6K → 854</b><span>claims needing manual review</span></div>
+          <div class="res"><b>82%</b><span>improper claims caught before payment</span></div>
+          <div class="links"><a class="btn" href="https://github.com/thrinesh13/Medicare-Claims-Payment-Integrity-Analytics" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </aside>
+      </article>
+
+      <article class="case">
+        <div class="story">
+          <span class="eyebrow">Hospital operations · Data pipeline · Variance analysis</span>
+          <h3>Surgical Scheduling Variance Analysis</h3>
+          <p class="hook">Operating rooms are among a hospital's most expensive resources, yet surgeries are booked on duration estimates that are rarely checked. I measured how often they miss and what it costs.</p>
+          <p class="line"><span class="label">Approach</span>Built a Microsoft Fabric medallion pipeline in PySpark on 1.88M records, cleaning 65.7K operating room records into a 48.1K-case cohort. Benchmarked each procedure against its median in a Power BI star-schema model.</p>
+          <p class="line out"><span class="label">Outcome</span>The variance is concentrated in a small set of procedures, so correcting their duration estimates first targets the largest share of cost exposure.</p>
+          <div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Power BI</span><span class="chip">DAX</span></div>
+          <p class="note">Cost range uses illustrative OR rates of $35 to $60 per minute.</p>
+        </div>
+        <aside class="rail num" aria-label="Key results">
+          <span class="eyebrow">Key results</span>
+          <div class="res hl"><b>$15.8M to $27.1M</b><span>yearly cost exposure</span></div>
+          <div class="res"><b>53.3%</b><span>of cases off by 30+ minutes</span></div>
+          <div class="res"><b>133 of 418</b><span>procedures drive 53.6% of it</span></div>
+          <div class="links"><a class="btn primary" href="https://thrinesh13.github.io/Surgical-Scheduling-Variance-Analysis/dashboard/" target="_blank" rel="noopener">Live dashboard ↗</a><a class="btn" href="https://github.com/thrinesh13/Surgical-Scheduling-Variance-Analysis" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </aside>
+      </article>
+
+      <article class="case">
+        <div class="story">
+          <span class="eyebrow">Stock market trend analysis · Statistical testing</span>
+          <h3>Statistical Time-Series Analysis</h3>
+          <p class="hook">Apple's stock more than doubled in five years, through a 2022 selloff and a 2023 recovery. I tested four common beliefs about how a stock like this behaves.</p>
+          <p class="line"><span class="label">Approach</span>Cleaned 1,254 trading days in pandas and ran a statistical time-series analysis using trend, correlation, distribution, and hypothesis testing.</p>
+          <p class="line out"><span class="label">Outcome</span>Growth did not bring more risk, volume did not predict price, and calendar patterns did not hold year to year. The real risk is in sudden big swings, which happen several times a year.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">Time-series analysis</span><span class="chip">Hypothesis testing</span></div>
+        </div>
+        <aside class="rail num" aria-label="Key results">
+          <span class="eyebrow">Key results</span>
+          <div class="res hl"><b>$146 → $311</b><span>price over 5 years, a 16.3% annual growth rate</span></div>
+          <div class="res"><b>1.65%</b><span>average daily volatility, steady as the price doubled</span></div>
+          <div class="res"><b>3 of 4</b><span>common beliefs rejected by the data</span></div>
+          <div class="links"><a class="btn" href="https://github.com/thrinesh13/Statistical-Time-series-analysis" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </aside>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="education" aria-labelledby="edu-h">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">Credentials</span><h2 id="edu-h">Education and certification</h2></div>
+    </div>
     <div class="creds">
-      <div class="cred">
-        <span class="eyebrow">Microsoft Certified</span>
-        <h3>Fabric Analytics Engineer Associate (DP-600)</h3>
-        <p><a href="https://learn.microsoft.com/en-us/users/trineshvuribindi-2141/credentials/ee8e4ff074331db2" target="_blank" rel="noopener">Verify credential ↗</a></p>
-      </div>
-      <div class="cred">
-        <span class="eyebrow">2023 to 2025</span>
-        <h3>M.S. Information Systems</h3>
-        <p>Saint Louis University, St. Louis, MO</p>
-      </div>
-      <div class="cred">
-        <span class="eyebrow">2017 to 2021</span>
-        <h3>B.Tech, Electrical and Electronics Engineering</h3>
-        <p>Guru Nanak Institutions Technical Campus, Hyderabad, India</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="block contact" id="contact" aria-labelledby="contact-h">
-  <div class="wrap">
-    <div>
-      <span class="eyebrow">Contact</span>
-      <h2 id="contact-h">Have a question your data should answer?</h2>
-      <p>I am open to Data Analyst, BI Analyst, and Reporting Analyst roles. Email me and I will send a resume matched to your role.</p>
-    </div>
-    <div class="rows">
-      <div class="row"><span class="l">Email</span><span class="v" id="em">vuribindithrinesh@gmail.com</span><button class="copy" type="button" data-copy="vuribindithrinesh@gmail.com" id="copy-email">Copy</button></div>
-      <div class="row"><span class="l">Phone</span><span class="v">+1 (312) 283-9011</span><button class="copy" type="button" data-copy="+13122839011" id="copy-phone">Copy</button></div>
-      <div class="row"><span class="l">LinkedIn</span><a class="v" href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener">linkedin.com/in/thrineshv</a></div>
-      <div class="row"><span class="l">GitHub</span><a class="v" href="https://github.com/thrinesh13" target="_blank" rel="noopener">github.com/thrinesh13</a></div>
+      <div class="cred"><span class="eyebrow">Certification</span><h3>Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)</h3><p><a href="https://learn.microsoft.com/en-us/users/trineshvuribindi-2141/credentials/ee8e4ff074331db2" target="_blank" rel="noopener">Verify credential ↗</a></p></div>
+      <div class="cred"><span class="eyebrow">2023 to 2025</span><h3>M.S. Information Systems</h3><p>Saint Louis University</p></div>
+      <div class="cred"><span class="eyebrow">2017 to 2021</span><h3>B.Tech, Electrical and Electronics Engineering</h3><p>Guru Nanak Institutions Technical Campus</p></div>
     </div>
   </div>
 </section>
 </main>
 
-<footer><div class="wrap"><span>© 2026 Thrinesh Vuribindi</span><span>Chicago, IL</span></div></footer>
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-h">Let's turn your business questions into reporting you can trust and act on.</h2>
+        <p class="lead">I build reporting end to end, from validated source data to the Power BI dashboards teams rely on every week, and I stay accountable for the numbers being right.</p>
+        <dl class="facts">
+          <div><dt>Focus</dt><dd>Data Analytics · Business Intelligence · Data Modeling · Reporting · Data Integration</dd></div>
+          <div><dt>Availability</dt><dd>Full-time or contract roles · Open to relocation</dd></div>
+        </dl>
+      </div>
+      <div class="contact-card">
+        <span class="card-k">Get in touch</span>
+        <div class="crow"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><div class="ct"><span class="cl">Email</span><span class="v">vuribindithrinesh@gmail.com</span></div><button class="copy" type="button" id="copy-email" data-copy="vuribindithrinesh@gmail.com">Copy</button></div>
+        <a class="crow link" href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.84-2.05 3.78-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg></span><div class="ct"><span class="cl">LinkedIn</span><span class="v">linkedin.com/in/thrineshv</span></div><span class="arr">↗</span></a>
+        <a class="crow link" href="https://github.com/thrinesh13" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></span><div class="ct"><span class="cl">GitHub</span><span class="v">github.com/thrinesh13</span></div><span class="arr">↗</span></a>
+        <a class="btn primary mail-btn" href="mailto:vuribindithrinesh@gmail.com">Email me</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Thrinesh Vuribindi</span></div></footer>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
@@ -479,7 +415,12 @@ document.querySelectorAll('.copy').forEach(function(b){
   });
 });
 function sel(b){var v=b.parentNode.querySelector('.v');var r=document.createRange();r.selectNodeContents(v);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var links={};document.querySelectorAll('.nav ul a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.values(links).forEach(function(a){a.classList.remove('on')});var a=links[e.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('section[id]').forEach(function(s){io.observe(s)});
+})();
 </script>
-
 </body>
 </html>
