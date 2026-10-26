@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Thrinesh Vuribindi | Data Analyst</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Thrinesh Vuribindi, Data Analyst with 4.5+ years in analytics, business intelligence, and data integration across healthcare and financial services.">
 <meta property="og:title" content="Thrinesh Vuribindi | Data Analyst">
-<meta property="og:description" content="Experience and analytics projects in SQL, Python, Power BI, Tableau, Snowflake, and Microsoft Fabric.">
+<meta property="og:description" content="Data Analyst in healthcare payer and provider analytics and financial services: SQL, Python, Power BI, Snowflake, and Microsoft Fabric for data integration, BI development, and root cause analysis.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thrinesh13.github.io/">
 <meta property="og:image" content="https://thrinesh13.github.io/profile.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0D6A61">
 <link rel="icon" href="profile.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,22 +82,20 @@ img{max-width:100%}
 .hero .btn:hover{border-color:var(--band-accent)}
 .hero .btn.primary{background:var(--band-accent);border-color:var(--band-accent);color:var(--band)}
 .icon{width:44px;height:44px;padding:0;justify-content:center}
+@media (max-width:420px){.btn{padding:10px 14px;font-size:.88rem}.icon{width:40px;height:40px}}
 .icon svg{width:18px;height:18px;fill:currentColor}
 .portrait{position:relative;justify-self:end;width:100%;max-width:340px}
 .portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:24px;background:var(--band-2)}
-.badge{position:absolute;left:-18px;bottom:22px;display:grid;gap:2px;padding:12px 16px;border-radius:14px;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 14px 34px rgba(15,42,37,.14);max-width:230px}
-.badge b{font-size:.86rem;font-weight:600;line-height:1.3}
-.badge span{font-size:.74rem;color:var(--muted)}
 .proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(44px,6vw,72px);border-top:1px solid var(--band-line)}
 .proof div{padding:24px 20px 28px;border-left:1px solid var(--band-line);min-width:0}
 .proof div:first-child{border-left:0;padding-left:0}
 .proof b{display:block;font-family:var(--f-display);font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1;color:var(--band-accent)}
 .proof span{display:block;margin-top:8px;font-size:.84rem;color:var(--band-muted);line-height:1.4}
+.proof i{display:block;font-style:normal;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--band-muted);margin-bottom:10px}
 @media (max-width:860px){
   .hero-grid{grid-template-columns:1fr}
   .portrait{order:-1;justify-self:start;max-width:200px}
   .portrait img{aspect-ratio:1/1;border-radius:20px}
-  .badge{display:none}
   .proof{grid-template-columns:repeat(2,minmax(0,1fr))}
   .proof div:nth-child(3){border-left:0;padding-left:0}
   .proof div:nth-child(n+3){border-top:1px solid var(--band-line)}
@@ -115,9 +114,18 @@ section.block + section.block{border-top:1px solid var(--line)}
 .cap{display:flex;flex-direction:column;gap:12px;padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:18px;min-width:0}
 .cap h3{font-size:1.12rem}
 .cap p{font-size:.9rem;color:var(--muted)}
-.cap .chips{margin-top:auto;padding-top:6px}
-.domain{margin-top:22px;padding:16px 20px;border-radius:14px;background:var(--accent-soft);font-size:.93rem}
-.domain b{font-weight:600}
+.cap{gap:10px}
+.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.scard{padding:20px 20px 18px;background:var(--surface);border:1px solid var(--line);border-radius:16px;border-top:3px solid var(--accent)}
+.scard.hc{border-top-color:var(--mark,#B5701A)}
+.scard h3{font-size:1rem;margin-bottom:12px}
+.scard ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.scard li{position:relative;padding-left:14px;font-size:.88rem;line-height:1.4;color:var(--ink)}
+.scard li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.55}
+.scard.hc li::before{background:var(--mark,#B5701A)}
+@media (max-width:1000px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.skills{grid-template-columns:1fr}}
+.chip.sk{background:transparent;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent)}
 @media (max-width:960px){.caps{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.caps{grid-template-columns:1fr}}
 
@@ -200,16 +208,22 @@ section.block + section.block{border-top:1px solid var(--line)}
 .mail-btn{justify-content:center;margin-top:6px}
 @media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
 footer{background:var(--band-2);color:var(--band-muted);font-size:.8rem;border-top:1px solid var(--band-line)}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-block:22px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px 24px;padding-block:26px}
+.f-id{display:flex;flex-direction:column;gap:2px}.f-id b{color:var(--band-ink,var(--ink));font-weight:600;font-size:.9rem}
+.f-links{display:flex;flex-wrap:wrap;gap:6px 18px}.f-links a{color:inherit;text-decoration:none}.f-links a:hover{color:var(--accent)}
+.f-copy{width:100%;padding-top:12px;border-top:1px solid var(--band-line)}
+.skip{position:absolute;left:-9999px;top:10px;z-index:200;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;font-weight:600}.skip:focus{left:16px}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#top">Thrinesh Vuribindi</a>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
@@ -225,7 +239,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
         <span class="eyebrow">Data Analyst · Business Intelligence · Analytics Engineering</span>
         <h1>Thrinesh Vuribindi</h1>
         <p class="headline">I turn complex data from multiple systems into reliable reporting and actionable business insights.</p>
-        <p class="sub">4.5+ years across data analysis, BI development, and data integration.</p>
+        <p class="sub">4.5+ years with SQL, Python, Power BI, Snowflake, and Microsoft Fabric across healthcare and financial services data.</p>
         <span class="status">Open to data roles · Open to relocation</span>
         <div class="actions">
           <a class="btn primary" href="#projects">View projects</a>
@@ -235,34 +249,52 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
         </div>
       </div>
       <figure class="portrait">
-        <img src="profile.jpg" alt="Portrait of Thrinesh Vuribindi" width="340" height="425">
+        <img src="profile.jpg" alt="Portrait of Thrinesh Vuribindi" width="340" height="425" fetchpriority="high" decoding="async">
       </figure>
     </div>
     <div class="proof num" aria-label="Highlights">
-      <div><b>12M+</b><span>claims and eligibility records analyzed monthly</span></div>
-      <div><b>10+</b><span>source systems integrated into one warehouse</span></div>
-      <div><b>6</b><span>production Power BI dashboards tracking 40+ KPIs</span></div>
-      <div><b>150+</b><span>report users on one consolidated solution</span></div>
+      <div><i>Large-scale analysis</i><b>12M+</b><span>claims and eligibility records analyzed monthly</span></div>
+      <div><i>Multi-source integration</i><b>10+</b><span>source systems integrated into one enterprise data warehouse</span></div>
+      <div><i>BI development</i><b>6</b><span>production Power BI dashboards tracking 40+ KPIs</span></div>
+      <div><i>Adoption</i><b>150+</b><span>report users on one consolidated solution</span></div>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 <section class="block" id="about" aria-labelledby="about-h">
   <div class="wrap">
     <div class="head">
       <div><span class="eyebrow">About</span><h2 id="about-h">What I do</h2></div>
-      <p>I integrate, validate, and analyze operational, financial, and claims data with SQL, Python, Snowflake, and Microsoft Fabric, delivering KPI monitoring, root cause analysis, and Power BI and Tableau reporting that gives stakeholders actionable recommendations.</p>
+      <p>I deliver analytics and decision support that enable healthcare payer and provider organizations and financial services businesses to control costs, improve quality and operational performance, and maintain accurate regulatory reporting. I integrate and validate data from multiple sources, build reliable reporting solutions, and perform root cause analysis to uncover issues, explain performance trends, and identify opportunities for improvement.</p>
     </div>
     <div class="caps">
-      <article class="cap"><h3>SQL and analytics</h3><p>Complex SQL (CTEs, window functions, stored procedures) and Python for exploratory and ad hoc analysis of cost, utilization, and performance, with root cause analysis of trends and variances.</p><div class="chips"><span class="chip">SQL</span><span class="chip">Python (pandas)</span><span class="chip">Excel</span><span class="chip">Statistical analysis</span><span class="chip">Regression and forecasting</span><span class="chip">A/B testing</span></div></article>
-      <article class="cap"><h3>Business intelligence</h3><p>Power BI dashboards and semantic models I build and maintain, with dynamic row-level security, DAX performance tuning, scheduled refreshes, and governed KPI definitions, plus Tableau dashboards for leadership, operations, and finance.</p><div class="chips"><span class="chip">Power BI (DAX)</span><span class="chip">Power Query</span><span class="chip">Power BI Service</span><span class="chip">Tableau</span><span class="chip">SSRS</span></div></article>
-      <article class="cap"><h3>Data integration</h3><p>ETL and data ingestion from flat files, APIs, and relational databases into Snowflake and Microsoft Fabric, with data profiling, cleansing, and source-to-target mappings.</p><div class="chips"><span class="chip">Azure Data Factory</span><span class="chip">SSIS</span><span class="chip">Airflow</span><span class="chip">dbt</span><span class="chip">Python</span></div></article>
-      <article class="cap"><h3>Data modeling</h3><p>Star-schema fact and dimension models, data warehousing, and medallion layers that give reporting one source of truth.</p><div class="chips"><span class="chip">Snowflake</span><span class="chip">Microsoft Fabric</span><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">Redshift</span><span class="chip">BigQuery</span><span class="chip">Databricks</span></div></article>
-      <article class="cap"><h3>Data quality and governance</h3><p>Validation, reconciliation, and lineage checks, plus data dictionaries, KPI definitions, and access controls that keep reporting consistent and compliant.</p><div class="chips"><span class="chip">Data profiling</span><span class="chip">Reconciliation</span><span class="chip">Data lineage</span><span class="chip">Metadata</span><span class="chip">Row-level security</span></div></article>
-      <article class="cap"><h3>Requirements and delivery</h3><p>Requirements gathering, functional specifications, UAT, and user training in Agile teams, plus presenting findings and recommendations to senior leaders.</p><div class="chips"><span class="chip">Requirements gathering</span><span class="chip">UAT</span><span class="chip">Jira</span><span class="chip">Agile/Scrum</span><span class="chip">Stakeholder management</span><span class="chip">Git</span></div></article>
+      <article class="cap"><h3>SQL and analytics</h3><p>Exploratory, ad hoc, and root cause analysis in SQL and Python on millions of records, explaining claims utilization, cost and reimbursement trends, and budget variances.</p></article>
+      <article class="cap"><h3>Business intelligence</h3><p>Power BI dashboards and semantic models I build and maintain, tracking HEDIS/Stars quality, patient safety, clinical outcome, and cost KPIs, with DAX, row-level security, and scheduled refreshes, plus Tableau dashboards for operations and finance.</p></article>
+      <article class="cap"><h3>Data integration</h3><p>ETL pipelines that load claims files, APIs, CRM and ERP data, and SQL Server, Oracle, and SAP HANA tables into Snowflake and Microsoft Fabric through scheduled, monitored loads.</p></article>
+      <article class="cap"><h3>Data modeling</h3><p>Star-schema and medallion models in Snowflake and Microsoft Fabric that standardize data from multiple sources, so KPIs are calculated consistently across care management, risk adjustment, and finance reporting.</p></article>
+      <article class="cap"><h3>Data quality and governance</h3><p>Reconciliation, profiling, and lineage checks that catch claims and clinical data errors before they reach users or regulators, plus regression testing and release sign-off after every change.</p></article>
+      <article class="cap"><h3>Requirements and delivery</h3><p>Requirements, functional specifications, data mapping documents, and KPI definitions, carried through UAT, user training, and findings presented to senior leaders.</p></article>
     </div>
-    <p class="domain"><b>Domain knowledge:</b> healthcare claims, eligibility, and clinical data (HEDIS/Stars, Epic EHR, ICD-10/CPT, CMS, HIPAA), plus financial planning, cost, and operational reporting.</p>
+  </div>
+</section>
+
+<section class="block" id="skills" aria-labelledby="skills-h">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">Skills</span><h2 id="skills-h">Tools and methods</h2></div>
+      <p>Microsoft Certified: Fabric Analytics Engineer Associate (DP-600).</p>
+    </div>
+    <div class="skills">
+        <div class="scard"><h3>Analysis</h3><ul><li>SQL (CTEs, window functions, stored procedures)</li><li>Python (pandas, NumPy)</li><li>Excel (Power Pivot, VBA)</li><li>Exploratory data analysis</li><li>Ad hoc analysis</li><li>Root cause analysis</li><li>Variance analysis</li><li>Regression and forecasting</li><li>A/B testing</li><li>Cost-benefit analysis</li></ul></div>
+        <div class="scard"><h3>BI and visualization</h3><ul><li>Power BI (DAX, Power Query)</li><li>Power BI Service</li><li>Semantic models</li><li>Row-level security</li><li>Tableau</li><li>SSRS</li><li>KPI dashboards</li></ul></div>
+        <div class="scard"><h3>Data integration</h3><ul><li>ETL/ELT</li><li>Azure Data Factory</li><li>Alteryx</li><li>SSIS</li><li>Airflow</li><li>dbt</li><li>APIs</li><li>Source-to-target mapping</li></ul></div>
+        <div class="scard"><h3>Data platforms</h3><ul><li>Snowflake</li><li>Microsoft Fabric</li><li>Databricks</li><li>SQL Server</li><li>Oracle</li><li>PostgreSQL</li><li>Redshift</li><li>BigQuery</li></ul></div>
+        <div class="scard"><h3>Data modeling</h3><ul><li>Star schema</li><li>Dimensional modeling</li><li>Medallion architecture</li><li>Data warehousing</li></ul></div>
+        <div class="scard"><h3>Data quality and governance</h3><ul><li>Data profiling</li><li>Validation</li><li>Reconciliation</li><li>Data lineage</li><li>Metadata</li><li>Regression testing</li></ul></div>
+        <div class="scard"><h3>Delivery</h3><ul><li>Requirements gathering</li><li>Functional specifications</li><li>UAT</li><li>Agile/Scrum</li><li>Jira</li><li>Git</li><li>Stakeholder management</li></ul></div>
+        <div class="scard hc"><h3>Healthcare data</h3><ul><li>Claims and eligibility</li><li>Epic EHR (Clarity, Caboodle)</li><li>HL7</li><li>DRG and hospital billing</li><li>HEDIS/Stars</li><li>Risk adjustment (HCC, RADV)</li><li>ICD-10/CPT/HCPCS</li><li>CMS</li><li>HIPAA</li></ul></div>
+    </div>
   </div>
 </section>
 
@@ -275,25 +307,25 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
       <article class="role">
         <div class="role-meta"><span class="title">Data Analyst</span><span class="co">UnitedHealth Group</span><span class="ind">Enterprise healthcare</span><ul class="facts-row"><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>May 2025 to present</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Chicago, IL</span></li></ul></div>
         <div class="role-body">
-          <p>I own end-to-end reporting for 8 healthcare business units, from ETL pipelines across 10+ source systems to 6 production Power BI dashboards that I build and maintain, including the semantic models, row-level security, and scheduled refreshes in Power BI Service. Operations, finance, and clinical operations leaders use them to track utilization and cost, and I partner with IT and data engineering to keep them accurate.</p>
+          <p>I own end-to-end reporting for 8 healthcare business units: ETL pipelines across 10+ source systems and 6 production Power BI dashboards that I build and maintain, including the semantic models, row-level security, and scheduled refreshes. Operations, finance, and clinical operations leaders use them to track utilization and cost.</p>
           <span class="impact">Impact</span>
-          <ul class="metrics num"><li><b>3 days → &lt;1 day</b><span>report turnaround for 8 business units after automating 7 recurring workflows</span></li><li><b>19</b><span>claims errors fixed before CMS submission, protecting regulatory reporting accuracy</span></li><li><b>25%</b><span>less Tableau Server processing load after tuning slow SQL queries</span></li><li><b>40%</b><span>fewer ad hoc report requests after training 30 users to self-serve</span></li></ul>
+          <ul class="metrics num"><li><b>3 days → &lt;1 day</b><span>report turnaround for 8 business units after automating 7 recurring workflows</span></li><li><b>19</b><span>claims data errors found and fixed before CMS submission</span></li><li><b>25%</b><span>less Tableau Server processing load after tuning slow SQL queries</span></li><li><b>40%</b><span>fewer ad hoc report requests after training 30 users to self-serve</span></li></ul>
           <div class="chips"><span class="chip">SQL</span><span class="chip">Snowflake</span><span class="chip">Microsoft Fabric</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Tableau</span></div>
         </div>
       </article>
       <article class="role">
         <div class="role-meta"><span class="title">Data Analyst</span><span class="co">Infosys</span><span class="ind">IT consulting · Health plan client</span><ul class="facts-row"><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Jan 2022 to Aug 2023</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>India</span></li></ul></div>
         <div class="role-body">
-          <p>I owned BI reporting for a health plan client. I gathered requirements with business stakeholders, wrote SQL stored procedures and ETL across four source systems, and validated HIPAA-regulated data before every refresh. Revenue cycle, care management, and leadership teams relied on the Power BI solution I built on a star-schema data model with DAX measures, used by 150+ people.</p>
+          <p>I owned BI reporting for a health plan client. I gathered requirements with business stakeholders, wrote SQL stored procedures and ETL across 4 source systems, and validated HIPAA-regulated data before every refresh. Revenue cycle, care management, and leadership teams relied on the Power BI solution I built on a star-schema data model with DAX measures, used by 150+ people.</p>
           <span class="impact">Impact</span>
-          <ul class="metrics num"><li><b>2+ hrs → 20 min</b><span>reporting time after replacing 4 legacy reports with one Power BI solution</span></li><li><b>Manual → 90%</b><span>pre-refresh validation automated, with zero discrepancies reaching users</span></li><li><b>+30%</b><span>more reliable care management and quality reporting from analytics-ready clinical datasets</span></li><li><b>+20%</b><span>payer submission accuracy after reconciling ICD-10 and CPT codes</span></li></ul>
+          <ul class="metrics num"><li><b>2+ hrs → 20 min</b><span>reporting time after replacing 4 legacy reports with one Power BI solution</span></li><li><b>Manual → 90%</b><span>pre-refresh validation automated, with zero discrepancies reaching users</span></li><li><b>+30%</b><span>reliability of care management and quality reporting after building analytics-ready clinical datasets from EHR data</span></li><li><b>+20%</b><span>payer submission accuracy after reconciling ICD-10 and CPT codes</span></li></ul>
           <div class="chips"><span class="chip">SQL</span><span class="chip">SSIS</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span></div>
         </div>
       </article>
       <article class="role">
         <div class="role-meta"><span class="title">Associate Data Analyst</span><span class="co">Genpact</span><span class="ind">IT consulting</span><ul class="facts-row"><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Jun 2020 to Dec 2021</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>India</span></li></ul></div>
         <div class="role-body">
-          <p>I delivered client data operations and financial reporting. I cleaned and validated raw client files, built Excel forecasting models, and ran variance analysis against budget. Client business owners and FP&amp;A teams used the findings to plan budgets and control costs.</p>
+          <p>I cleaned and validated raw client data files, built Excel forecasting models, and ran monthly variance analysis of revenue, cost, and gross margin against budget. Client business owners and FP&amp;A teams used the findings to plan budgets and control costs.</p>
           <span class="impact">Impact</span>
           <ul class="metrics num"><li><b>4 hrs → 30 min</b><span>weekly report prep after automating with Power Query and VBA</span></li><li><b>92%</b><span>of client records delivered clean, with source errors flagged to the client</span></li><li><b>8% ($180K)</b><span>annual operating cost reduction supported by variance findings</span></li><li><b>13</b><span>cost and revenue categories forecast for monthly planning</span></li></ul>
           <div class="chips"><span class="chip">Advanced Excel</span><span class="chip">Power Query</span><span class="chip">Excel VBA</span><span class="chip">SQL</span></div>
@@ -307,6 +339,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
   <div class="wrap">
     <div class="head">
       <div><span class="eyebrow">Projects</span><h2 id="proj-h">Selected work</h2></div>
+      <p>Each project links to its GitHub repository, with the code, methods, data sources, and documentation behind every result.</p>
     </div>
     <div class="projects">
       <article class="case">
@@ -316,7 +349,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
           <p class="hook">Manually reviewing every claim was modeled at $425K, and improper payments still got through. I tested which claims rules can safely decide before payment.</p>
           <p class="line"><span class="label">Approach</span>Cleaned 10 raw claims extracts in Python and built staging, core, and mart layers in PostgreSQL. Translated Medicare Part B billing rules into 10 SQL prepayment edits and validated them against payer decisions.</p>
           <p class="line out"><span class="label">Outcome</span>Rules can route 96% of claims at 93.3% edit accuracy, tracked in a 4-page Power BI report with drill-through KPIs and what-if cost scenarios. Human review stays for medical necessity and missing documentation, where rules fall short.</p>
-          <div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">Power BI</span></div>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip sk">Data cleaning</span><span class="chip sk">Data modeling</span><span class="chip sk">Rules validation</span><span class="chip sk">What-if analysis</span></div>
           <p class="note">Synthetic claims on real CMS file layouts and code sets.</p>
         </div>
         <aside class="rail num" aria-label="Key results">
@@ -335,14 +368,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
           <p class="hook">Operating rooms are among a hospital's most expensive resources, yet surgeries are booked on duration estimates that are rarely checked. I measured how often they miss and what it costs.</p>
           <p class="line"><span class="label">Approach</span>Built a Microsoft Fabric medallion pipeline in PySpark on 1.88M records, cleaning 65.7K operating room records into a 48.1K-case cohort. Benchmarked each procedure against its median in a Power BI star-schema model.</p>
           <p class="line out"><span class="label">Outcome</span>The variance is concentrated in a small set of procedures, so correcting their duration estimates first targets the largest share of cost exposure.</p>
-          <div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Power BI</span><span class="chip">DAX</span></div>
+          <div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip sk">Data pipeline</span><span class="chip sk">Star-schema modeling</span><span class="chip sk">Benchmarking</span><span class="chip sk">Variance analysis</span></div>
           <p class="note">Cost range uses illustrative OR rates of $35 to $60 per minute.</p>
         </div>
         <aside class="rail num" aria-label="Key results">
           <span class="eyebrow">Key results</span>
           <div class="res hl"><b>$15.8M to $27.1M</b><span>yearly cost exposure</span></div>
           <div class="res"><b>53.3%</b><span>of cases off by 30+ minutes</span></div>
-          <div class="res"><b>133 of 418</b><span>procedures drive 53.6% of it</span></div>
+          <div class="res"><b>133 of 418</b><span>procedures drive 53.6% of the cost exposure</span></div>
           <div class="links"><a class="btn primary" href="https://thrinesh13.github.io/Surgical-Scheduling-Variance-Analysis/dashboard/" target="_blank" rel="noopener">Live dashboard ↗</a><a class="btn" href="https://github.com/thrinesh13/Surgical-Scheduling-Variance-Analysis" target="_blank" rel="noopener">GitHub ↗</a></div>
         </aside>
       </article>
@@ -354,7 +387,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
           <p class="hook">Apple's stock more than doubled in five years, through a 2022 selloff and a 2023 recovery. I tested four common beliefs about how a stock like this behaves.</p>
           <p class="line"><span class="label">Approach</span>Cleaned 1,254 trading days in pandas and ran a statistical time-series analysis using trend, correlation, distribution, and hypothesis testing.</p>
           <p class="line out"><span class="label">Outcome</span>Growth did not bring more risk, volume did not predict price, and calendar patterns did not hold year to year. The real risk is in sudden big swings, which happen several times a year.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">Time-series analysis</span><span class="chip">Hypothesis testing</span></div>
+          <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip sk">Time-series analysis</span><span class="chip sk">Hypothesis testing</span><span class="chip sk">Correlation analysis</span><span class="chip sk">Trend analysis</span></div>
         </div>
         <aside class="rail num" aria-label="Key results">
           <span class="eyebrow">Key results</span>
@@ -404,7 +437,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;p
     </div>
   </div>
 </section>
-<footer><div class="wrap"><span>© 2026 Thrinesh Vuribindi</span></div></footer>
+<footer><div class="wrap"><div class="f-id"><b>Thrinesh Vuribindi</b><span>Data Analyst · Business Intelligence · Analytics Engineering</span></div><nav class="f-links" aria-label="Footer"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/thrinesh13" target="_blank" rel="noopener">GitHub</a></nav><span class="f-copy">© 2026 Thrinesh Vuribindi</span></div></footer>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
