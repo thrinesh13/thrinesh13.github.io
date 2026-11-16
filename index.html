@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Thrinesh Vuribindi | Data Analyst</title>
-<meta name="description" content="Thrinesh Vuribindi, Data Analyst with 4.5+ years of measurable results: lower costs, accurate data, faster reporting, and self-service BI.">
+<meta name="description" content="Thrinesh Vuribindi, Data Analyst with 4.5+ years turning data into insights that help optimize operational costs, improve accuracy, and increase efficiency.">
 <meta property="og:title" content="Thrinesh Vuribindi | Data Analyst">
-<meta property="og:description" content="Data Analyst: SQL, Python, Power BI, Tableau, Snowflake, and Microsoft Fabric. Results in cost, accuracy, speed, and user adoption.">
+<meta property="og:description" content="Data Analyst turning data into insights that help optimize operational costs, improve accuracy, and increase efficiency. SQL, Excel, Python, Power BI, Tableau, Snowflake.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thrinesh13.github.io/">
 <meta property="og:image" content="https://thrinesh13.github.io/profile.jpg">
@@ -22,7 +22,7 @@
    credentials, and a contact band. */
 :root{
   --paper:#F5F7F4; --surface:#FFFFFF; --ink:#13201C; --muted:#4F5E57; --line:#DCE2DD;
-  --accent:#0D6A61; --accent-soft:#E3EFEC; --mark:#A9640F; --on-accent:#FFFFFF;
+  --accent:#0D6A61; --accent-soft:#E3EFEC; --mark:#94560A; --on-accent:#FFFFFF;
   --hero:#0B3B35; --hero-2:#0F4A43; --hero-ink:#F1F7F5; --hero-muted:#B5CCC5; --hero-line:#2A5A52; --hero-accent:#7FD6C6;
   --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --f-body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
@@ -110,14 +110,6 @@ section.block + section.block{border-top:1px solid var(--line)}
 @media (max-width:860px){.head{grid-template-columns:1fr}}
 .head.solo{grid-template-columns:1fr}
 
-/* what I do */
-.caps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.cap{display:flex;flex-direction:column;gap:10px;border-left:4px solid var(--accent);padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:18px;min-width:0}
-.cap h3{font-size:1.15rem}
-.cap p{font-size:.98rem;color:var(--muted);line-height:1.6}
-
-@media (max-width:560px){.caps{grid-template-columns:1fr}}
-
 /* projects */
 .projects{display:grid;gap:20px}
 .case{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
@@ -150,11 +142,21 @@ section.block + section.block{border-top:1px solid var(--line)}
 .role-body li{font-size:.95rem;max-width:80ch}
 .role-body li::marker{color:var(--accent)}
 .role-body>p{font-size:.96rem;max-width:80ch}
-.metrics{list-style:none;padding:0!important;display:grid!important;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px!important}
+.role-body>p.summ{font-weight:500;color:var(--ink)}
+.role-body ul.duties{padding-left:18px;display:grid;gap:6px;margin:0}
+.role-body ul.duties li{font-size:.94rem;color:var(--muted);line-height:1.5}
+.metrics{list-style:none;padding:0!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px!important}
 .metrics li{display:grid;gap:4px;align-content:start;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);min-width:0;max-width:none}
 .metrics i{font-style:normal;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mark)}
 .metrics b{font-family:var(--f-display);font-size:1.12rem;line-height:1.15;color:var(--accent);white-space:nowrap}
 .metrics span{font-size:.82rem;line-height:1.4;color:var(--muted)}
+.metrics.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.metrics.c3{grid-template-columns:1fr}}
+.metrics li.feature{grid-column:1/-1;grid-template-columns:auto minmax(0,1fr);column-gap:22px;align-items:center;background:color-mix(in srgb,var(--mark) 7%,var(--surface));border-color:color-mix(in srgb,var(--mark) 35%,transparent)}
+.metrics li.feature i{grid-column:1/-1}
+.metrics li.feature b{font-size:2rem;color:var(--mark)}
+.metrics li.feature span{font-size:.9rem;color:var(--ink)}
+@media (max-width:560px){.metrics li.feature{grid-template-columns:1fr}.metrics li.feature b{font-size:1.6rem}}
 @media (max-width:1100px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:520px){.metrics li{padding:12px}.metrics b{white-space:normal;font-size:1.05rem}}
 @media (max-width:760px){.role{grid-template-columns:1fr;gap:12px}}
@@ -202,6 +204,14 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)}
 .f-links{display:flex;flex-wrap:wrap;gap:6px 18px}
 .skip{position:absolute;left:-9999px;top:10px;z-index:200;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;font-weight:600}.skip:focus{left:16px}
+@media print{
+  .nav,.skip,.actions,.copy,.mail-btn,.rail .links,footer .f-links{display:none!important}
+  body{background:#fff;color:#000}
+  .hero,.contact,footer{background:#fff!important;color:#000!important}
+  .hero *,.contact *{color:#000!important}
+  section.block{padding-block:20px}
+  .role,.case,.scard,.cred{break-inside:avoid}
+}
 </style>
 </head>
 <body>
@@ -211,7 +221,6 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
   <div class="wrap">
     <a class="brand" href="#top">Thrinesh Vuribindi</a>
     <ul>
-      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -225,11 +234,11 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">Data Analyst · Business Intelligence · Reporting &amp; Analytics</span>
+        <span class="eyebrow">Data Analyst · Business Intelligence · Analytics Engineering</span>
         <h1>Thrinesh Vuribindi</h1>
-        <p class="headline">Data analysis that cuts costs, catches errors before they reach regulators, and turns multi-day reporting into same-day results.</p>
-        <p class="sub">4.5+ years turning data from multiple business systems into analysis, dashboards, and recommendations, using SQL, Python, Power BI, Tableau, Snowflake, and Microsoft Fabric.</p>
-        <div class="tags"><span class="status">Open to data and BI analyst roles · Open to relocation</span><span class="status cert">Microsoft Certified: Fabric Analytics Engineer (DP-600)</span></div>
+        <p class="headline">I turn data into insights that help optimize operational costs, improve accuracy, and increase efficiency.</p>
+        <p class="sub">4.5+ years building analysis, dashboards, and recommendations that drive decisions, with SQL, Excel, Python, Power BI, Tableau, and Snowflake.</p>
+        <div class="tags"><span class="status">Open to full-time or contract roles · Open to relocation</span><span class="status cert">Microsoft Certified: Fabric Analytics Engineer (DP-600)</span></div>
         <div class="actions">
           <a class="btn primary" href="#experience">See my work</a>
           <a class="btn" href="#contact">Get in touch</a>
@@ -245,38 +254,24 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
       <div><i>Large-scale analysis</i><b>12M+</b><span>claims and eligibility records analyzed monthly</span></div>
       <div><i>BI development</i><b>6</b><span>production Power BI dashboards tracking 40+ KPIs</span></div>
       <div><i>Adoption</i><b>150+</b><span>report users on one consolidated Power BI solution</span></div>
-      <div><i>Faster reporting</i><b>&lt;1 day</b><span>report turnaround, down from 3 days, after automating 7 workflows</span></div>
+      <div><i>Efficiency</i><b>&lt;1 day</b><span>report turnaround, down from 3 days, after automating 7 workflows</span></div>
     </div>
   </div>
 </header>
 
 <main id="main">
-<section class="block" id="about" aria-labelledby="about-h">
-  <div class="wrap">
-    <div class="head solo">
-      <div><span class="eyebrow">About</span><h2 id="about-h">What I do</h2></div>
-    </div>
-    <div class="caps">
-      <article class="cap"><h3>Cost and performance analysis</h3><p>I analyze claims, eligibility, and hospital financial data to explain what drives utilization, cost, and margin. Finance and operations leaders use this analysis in quarterly performance reviews and in service line and payer contract decisions.</p></article>
-      <article class="cap"><h3>Dashboards and KPI reporting</h3><p>I build and maintain Power BI and Tableau dashboards that track 40+ KPIs across operations, finance, quality, and care management, so leaders can monitor performance on their own schedule.</p></article>
-      <article class="cap"><h3>Accurate, compliant data</h3><p>I validate and reconcile claims data and trace every reported figure back to its source, so CMS submissions, audits, and regulatory data calls go out right the first time.</p></article>
-      <article class="cap"><h3>Partnering with business teams</h3><p>I turn business questions into clear requirements and KPI definitions, test what we build with the people who will use it, and train teams to find answers on their own.</p></article>
-    </div>
-  </div>
-</section>
-
 <section class="block" id="skills" aria-labelledby="skills-h">
   <div class="wrap">
     <div class="head solo">
-      <div><span class="eyebrow">Skills</span><h2 id="skills-h">Tools and methods</h2></div>
+      <div><h2 id="skills-h">Skills</h2></div>
     </div>
     <div class="skills">
-      <div class="scard"><h3>Analysis</h3><ul><li>SQL (CTEs, window functions)</li><li>Python (pandas, NumPy)</li><li>Advanced Excel (Power Pivot, VBA)</li><li>SAS</li><li>Root cause and variance analysis</li><li>Forecasting and trend analysis</li><li>Hypothesis and A/B testing</li></ul></div>
-      <div class="scard"><h3>BI and reporting</h3><ul><li>Power BI (DAX, Power Query)</li><li>Power BI Service</li><li>Tableau</li><li>SSRS</li><li>Semantic models</li><li>Row-level security</li><li>KPI dashboards</li></ul></div>
-      <div class="scard"><h3>Data platforms</h3><ul><li>Snowflake</li><li>Microsoft Fabric</li><li>SQL Server</li><li>Oracle</li><li>PostgreSQL</li><li>Databricks</li><li>ETL (SSIS, Azure Data Factory, dbt)</li><li>Data modeling (star schema)</li></ul></div>
+      <div class="scard"><h3>Analysis</h3><ul><li>Advanced SQL (CTEs, window functions)</li><li>Advanced Excel (PivotTables, Power Query, VBA)</li><li>Python (pandas, NumPy)</li><li>SAS</li><li>Statistical analysis (regression, time-series)</li><li>Root cause, driver, and variance analysis</li><li>Segmentation and A/B testing</li></ul></div>
+      <div class="scard"><h3>BI and reporting</h3><ul><li>Power BI (DAX, Power Query, Service)</li><li>Tableau</li><li>SSRS</li><li>KPI dashboards and scorecards</li><li>Semantic models and row-level security</li></ul></div>
+      <div class="scard"><h3>Healthcare data</h3><ul><li>Medical and pharmacy claims, eligibility (837/835)</li><li>Medicare, Medicaid, CMS reporting</li><li>HEDIS/Stars quality measures</li><li>ICD-10, CPT, HCPCS, DRG</li><li>Utilization and cost of care</li><li>HIPAA and PHI</li></ul></div>
       <div class="scard"><h3>Data quality</h3><ul><li>Data profiling</li><li>Validation and reconciliation</li><li>Data lineage</li><li>UAT and regression testing</li></ul></div>
-      <div class="scard"><h3>Healthcare data</h3><ul><li>Claims and eligibility (837/835)</li><li>Medicare, Medicaid, CMS reporting</li><li>HEDIS/Stars quality measures</li><li>ICD-10, CPT, HCPCS, DRG</li><li>Utilization and cost of care</li><li>Revenue cycle</li><li>HIPAA and PHI</li></ul></div>
-      <div class="scard"><h3>Stakeholder collaboration</h3><ul><li>Requirements gathering</li><li>KPI definitions</li><li>Stakeholder presentations</li><li>User training</li><li>Agile/Scrum</li><li>Git</li></ul></div>
+      <div class="scard"><h3>Data platforms</h3><ul><li>Snowflake</li><li>Microsoft Fabric</li><li>SQL Server, Oracle, PostgreSQL</li><li>Databricks</li><li>ETL (SSIS, Azure Data Factory, dbt)</li><li>Data modeling (star schema)</li></ul></div>
+      <div class="scard"><h3>Stakeholder collaboration</h3><ul><li>Requirements and KPI definitions</li><li>Presentations to senior leaders</li><li>User training</li><li>Agile/Scrum, Git</li></ul></div>
     </div>
   </div>
 </section>
@@ -284,31 +279,34 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
 <section class="block" id="experience" aria-labelledby="exp-h">
   <div class="wrap">
     <div class="head solo">
-      <div><span class="eyebrow">Experience</span><h2 id="exp-h">Where I've delivered</h2></div>
+      <div><h2 id="exp-h">Experience</h2></div>
     </div>
     <div class="roles">
       <article class="role">
         <div class="role-meta"><span class="title">Data Analyst</span><span class="co">UnitedHealth Group</span><span class="when">May 2025 to present</span><span class="when">Chicago, IL</span></div>
         <div class="role-body">
-          <p>Own reporting for 8 healthcare business units: 6 production Power BI dashboards and Tableau dashboards used by operations, finance, and clinical leaders. Analyze claims, eligibility, and hospital financial data in SQL, Python, and SAS, including payer contract rate variance, service line profitability, and cost allocation for quarterly performance reviews.</p>
-          <ul class="metrics num"><li><i>Cost and performance</i><b>$300K</b><span>variance between expected (contracted) and actual allowed amounts, found in 3 months of claims data covering 500K claims and 8 payer contracts</span></li><li><i>Dashboards and KPIs</i><b>3 days → &lt;1 day</b><span>report turnaround for 8 business units after automating 7 recurring workflows</span></li><li><i>Accurate data</i><b>19</b><span>claims data errors traced to source and fixed before CMS submission</span></li><li><i>Business partnership</i><b>40%</b><span>fewer ad hoc report requests after training 30 users to self-serve</span></li></ul>
-          <div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">SAS</span><span class="chip">Snowflake</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Microsoft Fabric</span></div>
+          <p class="summ">Healthcare analytics for 8 business units and lines of business, supporting operations, finance, and actuarial teams.</p>
+          <ul class="metrics num c3"><li class="feature"><i>Cost · Payer contract variance</i><b>$300K</b><span>in variance identified between contracted allowed and actual paid amounts across 500K claims and 8 payer contracts. Presented it to the contracting team, flagged claims for reprocessing, helped correct rate setup errors, and built a recurring report to monitor it.</span></li><li><i>Accuracy</i><b>19</b><span>claims data errors kept from reaching CMS by tracing discrepancies to source before submission</span></li><li><i>Efficiency</i><b>3 days → &lt;1 day</b><span>report turnaround for 8 business units after automating 7 recurring workflows</span></li><li><i>Self-service</i><b>40%</b><span>fewer ad hoc report requests after training 30 users to self-serve</span></li></ul>
+          <ul class="duties"><li>Gave 15+ leaders self-service views of 40+ KPIs across payer contracts, value-based care, and quality through 6 production Power BI dashboards, designed and developed for recurring performance reviews and day-to-day decisions.</li><li>Integrated claims, clinical, provider, and pharmacy data from 10+ sources, aligning 1,000+ fields to specifications at 98% accuracy.</li><li>Surfaced cost reduction opportunities for quarterly performance reviews by analyzing utilization variation and outliers across 12M+ monthly claims and eligibility records with regression, time-series, and driver analysis.</li></ul>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">SAS</span><span class="chip">Python</span><span class="chip">Snowflake</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Microsoft Fabric</span></div>
         </div>
       </article>
       <article class="role">
         <div class="role-meta"><span class="title">Data Analyst</span><span class="co">Infosys</span><span class="when">Jan 2022 to Aug 2023</span><span class="when">Health plan client</span></div>
         <div class="role-body">
-          <p>Owned BI reporting for a health plan client. Gathered requirements, wrote SQL stored procedures and SSIS loads across 4 source systems, built SQL fraud and anomaly detection queries, and delivered a star-schema Power BI solution for revenue cycle, care management, and leadership teams.</p>
-          <ul class="metrics num"><li><i>Faster reporting</i><b>2+ hrs → 20 min</b><span>reporting time after replacing 4 legacy reports with one Power BI solution</span></li><li><i>Data accuracy</i><b>90% automated</b><span>pre-refresh validation, with zero discrepancies reaching users</span></li><li><i>Submission accuracy</i><b>+20%</b><span>payer submission accuracy after reconciling ICD-10 and CPT codes</span></li><li><i>Reporting quality</i><b>+30%</b><span>reliability of care management and quality reporting from analytics-ready clinical datasets</span></li></ul>
-          <div class="chips"><span class="chip">SQL</span><span class="chip">SSIS</span><span class="chip">SSRS</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip">DAX</span></div>
+          <p class="summ">Owned BI reporting for a health plan client's revenue cycle, care management, and leadership teams.</p>
+          <ul class="metrics num c4"><li><i>Submission accuracy</i><b>+20%</b><span>encounter data submission accuracy after reconciling ICD-10 and CPT codes between clinical records and claims</span></li><li><i>Data quality</i><b>25%</b><span>fewer data errors in analytics-ready datasets built from 50,000+ EMR records for care management and quality reporting</span></li><li><i>Data validation</i><b>90% automated</b><span>pre-refresh validation, with zero discrepancies reaching users</span></li><li><i>Efficiency</i><b>2+ hrs → 20 min</b><span>reporting time after consolidating 4 legacy Excel and SSRS reports into one Power BI solution for 150+ users</span></li></ul>
+          <ul class="duties"><li>Built SQL fraud and anomaly detection queries to flag unusual claims patterns for review, and presented results to leadership.</li></ul>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">SSIS</span><span class="chip">SSRS</span><span class="chip">Power BI</span><span class="chip">DAX</span></div>
         </div>
       </article>
       <article class="role">
         <div class="role-meta"><span class="title">Associate Data Analyst</span><span class="co">Genpact</span><span class="when">Jun 2020 to Dec 2021</span></div>
         <div class="role-body">
-          <p>Ran monthly variance analysis of revenue, cost, and gross margin against budget, built Excel forecasting models, and prepared ROI and cost-benefit analyses that business owners and FP&amp;A teams used to plan budgets.</p>
-          <ul class="metrics num"><li><i>Cost reduction</i><b>8% ($180K)</b><span>annual operating cost reduction supported by variance findings</span></li><li><i>Faster reporting</i><b>4 hrs → 30 min</b><span>weekly report prep after automating with Power Query and VBA</span></li></ul>
-          <div class="chips"><span class="chip">Advanced Excel</span><span class="chip">Power Query</span><span class="chip">Excel VBA</span><span class="chip">SQL</span></div>
+          <p class="summ">Analyzed cost, enrollment, and billing data to support client budgeting and reporting.</p>
+          <ul class="metrics num c3"><li><i>Cost</i><b>8% ($180K)</b><span>operating cost reduction supported by isolating cost drivers through variance analysis</span></li><li><i>Accuracy</i><b>92%</b><span>client data accuracy after cleaning and reconciling enrollment and premium billing files</span></li><li><i>Efficiency</i><b>4 hrs → 30 min</b><span>weekly report preparation after automating with Power Query and VBA</span></li></ul>
+          
+          <div class="chips"><span class="chip">Advanced Excel</span><span class="chip">Power Pivot</span><span class="chip">Power Query</span><span class="chip">Excel VBA</span><span class="chip">SQL</span></div>
         </div>
       </article>
     </div>
@@ -318,17 +316,16 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
 <section class="block" id="projects" aria-labelledby="proj-h">
   <div class="wrap">
     <div class="head solo">
-      <div><span class="eyebrow">Projects</span><h2 id="proj-h">Selected projects</h2></div>
+      <div><h2 id="proj-h">Projects</h2></div>
     </div>
     <div class="projects">
       <article class="case">
         <div class="story">
           <span class="eyebrow">Payment integrity · Data validation · Rules automation</span>
           <h3>Medicare Claims Payment Integrity</h3>
-          <p class="hook">Reviewing every claim by hand was modeled at $425K, and improper payments still got through. Which claims can billing rules safely decide before payment?</p>
-          <p class="line"><span class="label">Approach</span>Cleaned 10 raw claims extracts in Python, modeled them in PostgreSQL, and turned Medicare Part B billing rules into 10 SQL prepayment edits checked against the payer's final decisions.</p>
-          <p class="line out"><span class="label">Findings</span>Rules decide 96% of claims without a reviewer, at 93.3% precision. The top 30 providers drive 63% of flagged claims, and 99 claims ($7,088) that broke billing rules were already paid.</p>
-          <p class="line out"><span class="label">Recommendation</span>Auto-deny on the 6 most reliable edits, send 4 to review, keep medical-record review for medical necessity, and start provider education with the top 30. Tracked in a 4-page Power BI report with what-if cost scenarios.</p>
+          <p class="hook">Reviewing every claim by hand was modeled at $425K, and improper payments still got through. Which claims can billing rules decide safely?</p>
+          <p class="line"><span class="label">Approach</span>Cleaned 10 raw claims extracts into business-ready tables in Python and PostgreSQL, then built 10 SQL prepayment edits from Medicare Part B billing rules and tested them against the payer's decisions.</p>
+          <p class="line out"><span class="label">Recommendation</span>Auto-deny on the 6 most reliable edits, send 4 to review, and start provider education with the top 30 providers, who drive 63% of flagged claims. Tracked in a 4-page Power BI report.</p>
           <div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip sk">Data cleaning</span><span class="chip sk">Data modeling</span><span class="chip sk">Rules validation</span><span class="chip sk">What-if analysis</span></div>
           <p class="note">Synthetic claims on real CMS file layouts and code sets.</p>
         </div>
@@ -345,10 +342,9 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
         <div class="story">
           <span class="eyebrow">Hospital operations · Data pipeline · Variance analysis</span>
           <h3>Surgical Scheduling Variance Analysis</h3>
-          <p class="hook">Operating rooms are among a hospital's most expensive resources, yet surgeries are booked on duration estimates that are rarely checked. How often do they miss, and what does it cost?</p>
-          <p class="line"><span class="label">Approach</span>Cleaned 65.7K operating room records into a 48.1K-case cohort in Microsoft Fabric, removing 1,366 duplicates, then benchmarked every surgery against its procedure's median duration in a Power BI star-schema model.</p>
-          <p class="line out"><span class="label">Findings</span>Misses go both ways: 29.7% of cases ran 30+ minutes long, and early finishes left 2,167 room hours a year idle, about one staffed OR empty every working day.</p>
-          <p class="line out"><span class="label">Recommendation</span>Review the 133 procedures that drive over half the variation first, clean up 207 procedure names that mix different operations, and start recording booked durations.</p>
+          <p class="hook">Surgeries are booked on duration estimates that are rarely checked. How often do they miss, and what does it cost?</p>
+          <p class="line"><span class="label">Approach</span>Cleaned 65.7K raw operating room records into a business-ready 48.1K-case cohort in Microsoft Fabric, then benchmarked every surgery against its procedure's median duration in Power BI.</p>
+          <p class="line out"><span class="label">Recommendation</span>Review the 133 procedures driving over half the variation first, and set booking times per procedure to reduce both overruns and the 2,167 idle room hours a year from early finishes.</p>
           <div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip sk">Star-schema modeling</span><span class="chip sk">Benchmarking</span><span class="chip sk">Variance analysis</span><span class="chip sk">Root cause analysis</span></div>
           <p class="note">Cost range uses illustrative OR rates of $35 to $60 per minute.</p>
         </div>
@@ -365,10 +361,9 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
         <div class="story">
           <span class="eyebrow">Stock market trend analysis · Statistical testing</span>
           <h3>Statistical Time-Series Analysis</h3>
-          <p class="hook">Price charts show what happened, but not whether a pattern is real. Over five years of Apple stock, did risk rise with price, did volume predict direction, and were calendar patterns reliable?</p>
-          <p class="line"><span class="label">Approach</span>Engineered features from 1,254 trading days in pandas, then analyzed trend, rolling volatility, correlation, seasonality, and return distribution, with a normality test and a two-sample t-test.</p>
-          <p class="line out"><span class="label">Findings</span>Volatility stayed flat as the price doubled, volume did not signal direction (p = 0.267), and monthly patterns rested on too few observations. Returns had heavy tails, so normal-based risk models understate extreme days.</p>
-          <p class="line out"><span class="label">Recommendation</span>Measure risk in percentage returns, check correlations for shared time trends, and avoid timing rules built on short histories.</p>
+          <p class="hook">Over five years of Apple stock, did risk rise with price, did volume predict direction, and were calendar patterns real?</p>
+          <p class="line"><span class="label">Approach</span>Analyzed 1,254 trading days in pandas for trend, volatility, correlation, and seasonality, with a normality test and a two-sample t-test.</p>
+          <p class="line out"><span class="label">Recommendation</span>Measure risk in percentage returns and avoid timing rules built on short histories. Returns have heavy tails, so normal-based risk models understate extreme days.</p>
           <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">SciPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip sk">Time-series analysis</span><span class="chip sk">Hypothesis testing</span><span class="chip sk">Correlation analysis</span></div>
         </div>
         <aside class="rail num" aria-label="Key results">
@@ -386,7 +381,7 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
 <section class="block" id="credentials" aria-labelledby="cred-h">
   <div class="wrap">
     <div class="head solo">
-      <div><span class="eyebrow">Credentials</span><h2 id="cred-h">Education and certification</h2></div>
+      <div><h2 id="cred-h">Education and certification</h2></div>
     </div>
     <div class="creds">
       <div class="cred"><span class="eyebrow">Certification</span><h3>Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)</h3><p><a href="https://learn.microsoft.com/en-us/users/trineshvuribindi-2141/credentials/ee8e4ff074331db2" target="_blank" rel="noopener">Verify credential ↗</a></p></div>
@@ -403,7 +398,7 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
       <div>
         <span class="eyebrow">Contact</span>
         <h2 id="contact-h">Let's connect</h2>
-        <p class="lead">Open to Data Analyst, BI Analyst, and Reporting Analyst roles, full-time or contract. Based in Chicago and open to relocation.</p>
+        <p class="lead">Open to full-time or contract roles. Based in Chicago and open to relocation.</p>
       </div>
       <div class="contact-card">
         <div class="crow"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><div class="ct"><span class="cl">Email</span><span class="v">vuribindithrinesh@gmail.com</span></div><button class="copy" type="button" data-copy="vuribindithrinesh@gmail.com">Copy</button></div>
@@ -414,7 +409,7 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
     </div>
   </div>
 </section>
-<footer><div class="wrap"><span>© 2026 Thrinesh Vuribindi · Data Analyst</span><nav class="f-links" aria-label="Footer"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/thrinesh13" target="_blank" rel="noopener">GitHub</a></nav></div></footer>
+<footer><div class="wrap"><span>© 2026 Thrinesh Vuribindi · Data Analyst</span><nav class="f-links" aria-label="Footer"><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#credentials">Credentials</a><a href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/thrinesh13" target="_blank" rel="noopener">GitHub</a></nav></div></footer>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
