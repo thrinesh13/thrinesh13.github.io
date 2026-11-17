@@ -122,6 +122,11 @@ section.block + section.block{border-top:1px solid var(--line)}
 .line.out{color:var(--ink)}
 .label{display:inline-block;margin-right:8px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .note{font-size:.8rem;color:var(--muted)}
+.biz{font-size:1.02rem;color:var(--ink);line-height:1.55}
+.steps{margin:0;padding-left:18px;display:grid;gap:6px}
+.steps li{font-size:.93rem;color:var(--muted);line-height:1.5}
+.steps li::marker{color:var(--accent)}
+.steps b{color:var(--ink);font-weight:600}
 .rail{display:flex;flex-direction:column;padding:clamp(22px,3.2vw,36px);background:var(--accent-soft);border-left:1px solid var(--line);min-width:0}
 .res{padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--accent) 22%,transparent)}
 .res:last-of-type{border-bottom:0}
@@ -144,7 +149,9 @@ section.block + section.block{border-top:1px solid var(--line)}
 .role-body li{font-size:.95rem;max-width:80ch}
 .role-body li::marker{color:var(--accent)}
 .role-body>p{font-size:.96rem;max-width:80ch}
-.role-body>p.story{padding:12px 16px;border-left:3px solid var(--mark);background:color-mix(in srgb,var(--mark) 7%,transparent);border-radius:0 10px 10px 0}
+.role-body>p.story{display:block;padding:12px 16px;border-left:3px solid var(--mark);background:color-mix(in srgb,var(--mark) 7%,transparent);border-radius:0 10px 10px 0}
+.role-body>p.story .label{display:block;margin-bottom:6px}
+.role-body>p.story strong.hl{display:inline;margin:0;padding:0;font-family:var(--f-display);font-size:1.2em;font-weight:700;color:var(--mark)}
 .role-body>p.summ{font-weight:500;color:var(--ink)}
 .role-body ul.duties{padding-left:18px;display:grid;gap:6px;margin:0}
 .role-body ul.duties li{font-size:.94rem;color:var(--muted);line-height:1.5}
@@ -227,7 +234,7 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#credentials">Education</a></li>
     </ul>
     <a class="pill" href="#contact">Contact</a>
   </div>
@@ -241,10 +248,9 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
         <h1>Thrinesh Vuribindi</h1>
         <p class="headline">I turn raw data into insights that uncover <span style="white-space:nowrap">cost-of-care</span> opportunities, improve payment and reporting accuracy, and help teams monitor clinical and quality outcomes.</p>
         <p class="sub">4.5+ years building analysis, dashboards, and recommendations with SQL, Excel, Python, Power BI, Tableau, and Snowflake.</p>
-        <div class="tags"><span class="status">Open to full-time or contract roles · Open to relocation</span><a class="status cert" href="https://learn.microsoft.com/en-us/users/trineshvuribindi-2141/credentials/ee8e4ff074331db2" target="_blank" rel="noopener"><img src="dp600-badge.png" alt="" width="26" height="27">Microsoft Certified: Fabric Analytics Engineer (DP-600)</a></div>
+        <div class="tags"><a class="status cert" href="https://learn.microsoft.com/en-us/users/trineshvuribindi-2141/credentials/ee8e4ff074331db2" target="_blank" rel="noopener"><img src="dp600-badge.png" alt="" width="26" height="27">Microsoft Certified: Fabric Analytics Engineer (DP-600)</a></div>
         <div class="actions">
           <a class="btn primary" href="#experience">See my work</a>
-          <a class="btn" href="#contact">Get in touch</a>
           <a class="btn social" href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.84-2.05 3.78-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>LinkedIn</a>
           <a class="btn social" href="https://github.com/thrinesh13" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a>
         </div>
@@ -289,28 +295,24 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
         <div class="role-meta"><span class="title">Data Analyst</span><span class="co">UnitedHealth Group</span><span class="when">May 2025 to present</span><span class="when">Chicago, IL</span></div>
         <div class="role-body">
           <p class="summ">Healthcare analytics for 8 business units and lines of business, supporting operations, finance, and actuarial teams.</p>
-          <p class="story"><span class="label">Payer contract variance</span>Found $300K in variance between contracted allowed and actual paid amounts across 3 months of claims and 8 payer contracts. Presented it to the contracting team, flagged claims for reprocessing, helped correct rate setup errors, and built a recurring report to monitor it.</p>
-          <ul class="metrics num c3"><li><i>Accuracy</i><b>98%</b><span>of 1,000+ fields aligned to specifications across claims, clinical, provider, and pharmacy data from 10+ sources</span></li><li><i>Efficiency</i><b>3 days → &lt;1 day</b><span>report turnaround for 8 business units after automating 7 recurring workflows</span></li><li><i>Productivity</i><b>40%</b><span>fewer ad hoc report requests after training 30 users on the dashboards</span></li></ul>
-          <ul class="duties"><li>Gave 15+ leaders on-demand views of 40+ KPIs across payer contracts, value-based care, and quality through 6 production Power BI dashboards, designed and developed for recurring performance reviews and day-to-day decisions.</li><li>Surfaced cost reduction opportunities for quarterly performance reviews by analyzing utilization variation and outliers across 12M+ monthly claims and eligibility records with regression, time-series, and driver analysis.</li><li>Traced claims data discrepancies to source systems and resolved 19 errors before CMS submission.</li></ul>
-          <div class="chips"><span class="chip">SQL</span><span class="chip">SAS</span><span class="chip">Python</span><span class="chip">Snowflake</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Microsoft Fabric</span></div>
+          <p class="story"><span class="label">Payer contract variance</span>Using SQL, SAS, and Excel, compared 3 months of claims against the rate terms of 8 payer contracts and found <strong class="hl">$300K</strong> in variance between contracted allowed and actual paid amounts. Presented it to the contracting team, flagged claims for reprocessing, helped fix rate setup errors, and built a recurring monitoring report.</p>
+          <ul class="metrics num c3"><li><i>Accuracy</i><b>98%</b><span>of 1,000+ fields mapped to specifications across 10+ claims, clinical, and pharmacy sources</span></li><li><i>Efficiency</i><b>3 days → &lt;1 day</b><span>report turnaround after automating 7 workflows with Python and SQL</span></li><li><i>Productivity</i><b>40%</b><span>fewer ad hoc requests after training 30 users on Power BI</span></li></ul>
+          <ul class="duties"><li>Gave 15+ leaders on-demand views of 40+ KPIs across payer contracts, value-based care, and quality through 6 Power BI dashboards, designed and developed end to end.</li><li>Surfaced cost reduction opportunities for quarterly reviews through exploratory and statistical analysis (regression, time-series, driver analysis) of utilization across 12M+ monthly claims in SQL and SAS.</li><li>Resolved 19 claims data errors before CMS submission through root cause analysis back to source systems.</li></ul>
         </div>
       </article>
       <article class="role">
         <div class="role-meta"><span class="title">Data Analyst</span><span class="co">Infosys</span><span class="when">Jan 2022 to Aug 2023</span><span class="when">Health plan client</span></div>
         <div class="role-body">
-          <p class="summ">Owned BI reporting for a health plan client's revenue cycle, care management, and leadership teams.</p>
-          <ul class="metrics num c4"><li><i>Submission accuracy</i><b>+20%</b><span>encounter data submission accuracy after reconciling ICD-10 and CPT codes between clinical records and claims</span></li><li><i>Data quality</i><b>25%</b><span>fewer data errors in analytics-ready datasets built from 50,000+ EMR records for care management and quality reporting</span></li><li><i>Data validation</i><b>90% automated</b><span>pre-refresh validation, with zero discrepancies reaching users</span></li><li><i>Efficiency</i><b>2+ hrs → 20 min</b><span>reporting time after consolidating 4 legacy Excel and SSRS reports into one Power BI solution for 150+ users</span></li></ul>
-          <ul class="duties"><li>Built SQL fraud and anomaly detection queries to flag unusual claims patterns for review, and presented results to leadership.</li></ul>
-          <div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">SSIS</span><span class="chip">SSRS</span><span class="chip">Power BI</span><span class="chip">DAX</span></div>
+          <p class="summ">BI reporting for a health plan's revenue cycle, care management, and leadership teams.</p>
+          <ul class="metrics num c4"><li><i>Submission accuracy</i><b>+20%</b><span>encounter data submission accuracy after reconciling ICD-10 and CPT codes in SQL</span></li><li><i>Data quality</i><b>25%</b><span>fewer data errors after cleaning and validating 50,000+ EMR records with SQL and Python</span></li><li><i>Data validation</i><b>90% automated</b><span>pre-refresh validation in SQL, with zero discrepancies reaching users</span></li><li><i>Efficiency</i><b>2+ hrs → 20 min</b><span>reporting time after merging 4 legacy reports into one Power BI solution for 150+ users</span></li></ul>
+          <ul class="duties"><li>Built SQL fraud and anomaly detection queries to flag unusual claims for review.</li></ul>
         </div>
       </article>
       <article class="role">
         <div class="role-meta"><span class="title">Associate Data Analyst</span><span class="co">Genpact</span><span class="when">Jun 2020 to Dec 2021</span></div>
         <div class="role-body">
-          <p class="summ">Analyzed cost, enrollment, and billing data to support client budgeting and reporting.</p>
-          <ul class="metrics num c3"><li><i>Cost</i><b>8% ($180K)</b><span>operating cost reduction supported by isolating cost drivers through variance analysis</span></li><li><i>Accuracy</i><b>92%</b><span>client data accuracy after cleaning and reconciling enrollment and premium billing files</span></li><li><i>Efficiency</i><b>4 hrs → 30 min</b><span>weekly report preparation after automating with Power Query and VBA</span></li></ul>
-          
-          <div class="chips"><span class="chip">Advanced Excel</span><span class="chip">Power Pivot</span><span class="chip">Power Query</span><span class="chip">Excel VBA</span><span class="chip">SQL</span></div>
+          <p class="summ">Cost, enrollment, and billing analysis for client budgeting and reporting.</p>
+          <ul class="metrics num c3"><li><i>Cost</i><b>8% ($180K)</b><span>operating cost reduction supported by variance analysis of cost drivers</span></li><li><i>Accuracy</i><b>92%</b><span>data accuracy after cleaning and reconciling enrollment and billing files in SQL and Excel</span></li><li><i>Efficiency</i><b>4 hrs → 30 min</b><span>weekly report prep after automating with Power Query and VBA</span></li></ul>
         </div>
       </article>
     </div>
@@ -327,10 +329,9 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
         <div class="story">
           <span class="eyebrow">Payment integrity · Data validation · Rules automation</span>
           <h3>Medicare Claims Payment Integrity</h3>
-          <p class="hook">Reviewing every claim by hand was modeled at $425K, and improper payments still got through. Which claims can billing rules decide safely?</p>
-          <p class="line"><span class="label">Approach</span>Cleaned 10 raw claims extracts into business-ready tables in Python and PostgreSQL, then built 10 SQL prepayment edits from Medicare Part B billing rules and tested them against the payer's decisions.</p>
-          <p class="line out"><span class="label">Recommendation</span>Auto-deny on the 6 most reliable edits, send 4 to review, and start provider education with the top 30 providers, who drive 63% of flagged claims. Tracked in a 4-page Power BI report.</p>
-          <div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip sk">Data cleaning</span><span class="chip sk">Data modeling</span><span class="chip sk">Rules validation</span><span class="chip sk">What-if analysis</span></div>
+          <p class="biz">A health plan was reviewing every Medicare Part B claim by hand. It cost a modeled $425K, slowed every claim, and still let 99 claims that broke billing rules get paid.</p>
+          <ul class="steps"><li><b>Cleaned</b> 10 raw claims extracts in Python and modeled them in PostgreSQL.</li><li><b>Built and tested</b> 10 SQL prepayment edits against the payer's actual decisions; they decide 96% of claims without a reviewer.</li><li><b>Presented</b> a routing plan in Power BI: auto-deny on the 6 most reliable rules and educate the 30 providers behind 63% of flagged claims.</li></ul>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip sk">Data cleaning</span><span class="chip sk">Rules validation</span></div>
           <p class="note">Synthetic claims on real CMS file layouts and code sets.</p>
         </div>
         <aside class="rail num" aria-label="Key results">
@@ -346,10 +347,9 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
         <div class="story">
           <span class="eyebrow">Hospital operations · Data pipeline · Variance analysis</span>
           <h3>Surgical Scheduling Variance Analysis</h3>
-          <p class="hook">Surgeries are booked on duration estimates that are rarely checked. How often do they miss, and what does it cost?</p>
-          <p class="line"><span class="label">Approach</span>Cleaned 65.7K raw operating room records into a business-ready 48.1K-case cohort in Microsoft Fabric, then benchmarked every surgery against its procedure's median duration in Power BI.</p>
-          <p class="line out"><span class="label">Recommendation</span>Review the 133 procedures driving over half the variation first, and set booking times per procedure to reduce both overruns and the 2,167 idle room hours a year from early finishes.</p>
-          <div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip sk">Star-schema modeling</span><span class="chip sk">Benchmarking</span><span class="chip sk">Variance analysis</span><span class="chip sk">Root cause analysis</span></div>
+          <p class="biz">Hospitals book each surgery on an estimated duration but rarely check those estimates. When a case runs long, staff work overtime and later cases slip. When it ends early, a fully staffed room sits empty.</p>
+          <ul class="steps"><li><b>Cleaned</b> 65.7K raw operating room records into 48.1K cases in Microsoft Fabric.</li><li><b>Benchmarked</b> each surgery against its procedure's typical duration in Power BI and sized the misses: 7,539 room hours a year.</li><li><b>Found</b> early finishes leave 2,167 room hours a year idle, and gave leadership a short list of procedures to fix first.</li></ul>
+          <div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Power BI</span><span class="chip sk">Star-schema modeling</span><span class="chip sk">Variance analysis</span></div>
           <p class="note">Cost range uses illustrative OR rates of $35 to $60 per minute.</p>
         </div>
         <aside class="rail num" aria-label="Key results">
@@ -365,10 +365,9 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
         <div class="story">
           <span class="eyebrow">Stock market trend analysis · Statistical testing</span>
           <h3>Statistical Time-Series Analysis</h3>
-          <p class="hook">Over five years of Apple stock, did risk rise with price, did volume predict direction, and were calendar patterns real?</p>
-          <p class="line"><span class="label">Approach</span>Analyzed 1,254 trading days in pandas for trend, volatility, correlation, and seasonality, with a normality test and a two-sample t-test.</p>
-          <p class="line out"><span class="label">Recommendation</span>Measure risk in percentage returns and avoid timing rules built on short histories. Returns have heavy tails, so normal-based risk models understate extreme days.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">SciPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip sk">Time-series analysis</span><span class="chip sk">Hypothesis testing</span><span class="chip sk">Correlation analysis</span></div>
+          <p class="biz">Price charts make patterns look real, such as risk rising with price or volume signaling direction, but these beliefs are rarely tested.</p>
+          <ul class="steps"><li><b>Analyzed</b> 1,254 trading days of Apple stock in pandas.</li><li><b>Tested</b> each belief statistically: risk stayed flat as the price doubled, and volume did not predict direction.</li><li><b>Recommended</b> measuring risk in percentage returns, since heavy tails make normal-based risk models understate extreme days.</li></ul>
+          <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">SciPy</span><span class="chip sk">Time-series analysis</span><span class="chip sk">Hypothesis testing</span></div>
         </div>
         <aside class="rail num" aria-label="Key results">
           <span class="eyebrow">Key results</span>
@@ -400,7 +399,6 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
   <div class="wrap">
     <div class="contact-grid">
       <div>
-        <span class="eyebrow">Contact</span>
         <h2 id="contact-h">Let's connect</h2>
         <p class="lead">Open to full-time or contract roles. Based in Chicago and open to relocation.</p>
       </div>
@@ -413,7 +411,7 @@ footer a{color:inherit;text-decoration:none}footer a:hover{color:var(--hero-ink)
     </div>
   </div>
 </section>
-<footer><div class="wrap"><span>© 2026 Thrinesh Vuribindi · Data Analyst</span><nav class="f-links" aria-label="Footer"><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#credentials">Credentials</a><a href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/thrinesh13" target="_blank" rel="noopener">GitHub</a></nav></div></footer>
+<footer><div class="wrap"><span>© 2026 Thrinesh Vuribindi · Data Analyst</span><nav class="f-links" aria-label="Footer"><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#credentials">Education</a><a href="https://www.linkedin.com/in/thrineshv/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/thrinesh13" target="_blank" rel="noopener">GitHub</a></nav></div></footer>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
